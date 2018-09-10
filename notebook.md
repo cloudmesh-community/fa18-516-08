@@ -12,3 +12,4 @@ Week Fri 09/07/18 - Thu 09/13/18
 * Upgraded macbook with SSD and more RAM required for Virtual box and Vagrant
 * Setup virtual box, vagrant with ubuntu 18.04
 * Setup latest Python version on Virtual machines
+* Testing Github Fork,Pull Request features
