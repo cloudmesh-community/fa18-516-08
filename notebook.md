@@ -13,3 +13,4 @@ Week Fri 09/07/18 - Thu 09/13/18
 * Setup virtual box, vagrant with ubuntu 18.04
 * Setup latest Python version on Virtual machines.
 * Testing Github Fork,Pull Request features.
+* Tested Github Desktop.
