@@ -14,3 +14,11 @@ Week Fri 09/07/18 - Thu 09/13/18
 * Setup latest Python version on Virtual machines.
 * Testing Github Fork,Pull Request features.
 * Tested Github Desktop.
+
+Week Fri 09/14/18 - Thu 09/20/18
+* Read lecture notes on cloud architecture,AWS
+* Setup MONGO DB
+* Read about REST and Eve
+* Started working on GDPR and CLOUD chapter contribution
+
+
