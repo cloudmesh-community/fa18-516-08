@@ -21,4 +21,7 @@ Week Fri 09/14/18 - Thu 09/20/18
 * Read about REST and Eve
 * Started working on GDPR and CLOUD chapter contribution
 
-
+Week Fri 09/27/18 - Thu 10/04/18
+* Read lecture notes on epub
+* Attended online meeting with Gregor and clarified doubts on chapter, section and project contribution
+* Preparing for project
