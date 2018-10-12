@@ -7,13 +7,13 @@ owner:
 
 section:
     - title: TBD
-         url: TBD
+      url: TBD
 chapter:
     - title: title of the chapter
-         url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/chapter/GDPR.md         
+      url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/chapter/GDPR.md         
 project:
     - title: TBD
-         url: TBA
+      url: TBA
 other:
     - activity: TBD
-         url: TBD
+      url: TBD
