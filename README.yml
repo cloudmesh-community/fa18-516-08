@@ -8,7 +8,8 @@ section:
     - title: TBD
       url: TBD
 paper:
-    - title: title of the chapter
+    - title: GPPR
+      keyword: GDPR
       url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/chapter/GDPR.md         
 project:
     - title: TBD
