@@ -4,11 +4,10 @@ owner:
   lastname: "Joshi"
   hid: "fa18-516-08"
   community: "e516"
-
 section:
     - title: TBD
       url: TBD
-chapter:
+paper:
     - title: title of the chapter
       url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/chapter/GDPR.md         
 project:
