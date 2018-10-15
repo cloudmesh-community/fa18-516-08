@@ -1,5 +1,5 @@
 
-# Microsoft Azure Functions :hand: fa18-516-08
+# Google Cloud Functions :hand: fa18-516-08
 
 | Varun Joshi
 | vajoshi@iu.edu
