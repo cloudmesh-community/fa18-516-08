@@ -5,8 +5,11 @@ owner:
   hid: "fa18-516-08"
   community: "e516"
 section:
-    - title: TBD
-      url: TBD
+    - title: Azure Functions
+      url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/section/AzureFunctions.md
+     - title: Google Cloud Functions
+      url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/section/GCPFunctions.md
+      
 paper:
     - title: GPPR
       keyword: GDPR
