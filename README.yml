@@ -7,7 +7,7 @@ owner:
 section:
     - title: Azure Functions
       url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/section/AzureFunctions.md
-     - title: Google Cloud Functions
+    - title: Google Cloud Functions
       url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/section/GCPFunctions.md
       
 paper:
