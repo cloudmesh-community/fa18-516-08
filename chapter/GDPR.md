@@ -32,8 +32,8 @@ GDPR defines collective responsibility for both data processors and data control
 # Common Vendors GDPR Readiness
 
 # References
-https://eugdpr.org/the-regulation/
-https://gdpr-info.eu/art-4-gdpr/
-https://www.cloudsigma.com/gdpr-and-cloud-computing-challenges-and-opportunities/
-https://aws.amazon.com/compliance/gdpr-center/
-https://www.zdnet.com/article/gdpr-an-executive-guide-to-what-you-need-to-know/
+* https://eugdpr.org/the-regulation/
+* https://gdpr-info.eu/art-4-gdpr/
+* https://www.cloudsigma.com/gdpr-and-cloud-computing-challenges-and-opportunities/
+* https://aws.amazon.com/compliance/gdpr-center/
+* https://www.zdnet.com/article/gdpr-an-executive-guide-to-what-you-need-to-know/
