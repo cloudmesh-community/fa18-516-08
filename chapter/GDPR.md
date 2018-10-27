@@ -44,8 +44,45 @@ The complexity of this compliance may cause changes to how the cloud computing i
 
 
 # Public or Private Cloud
+Let's define few terms before we dig deep into the choice of public or private cloud given GDPR compliance.
+
+* Private cloud is an internal or enterprise dedicated cloud where data center resides and belongs to the enterprise and is behind enterprise firewall. The enterprise is solely responsible for managing and scaling the infrastructure as needed. Examples are AT&T, Cisco, T-Mobile have their own private cloud hosted in their own data centers.
+* Public cloud is a multi-tenant architecture where  the cloud infrastructure provider hosts many enterprises in it's data centers. The enterprises and  their data are virtually separated in the data center and enterprises have their own virtual private cloud network (example Amazon VPC). The cloud provider is responsible for managing and scaling the infrastructure at the data center. The enterprises can choose to individually upgrade and update the resources for patching, security etc. Examples are AWS, GCP, Azure.
+
+Based on the above concepts, their could be multiple iterations of the cloud solution.
+
+* Hybrid cloud is one such solution where there is a mix usage of on premise data center and public cloud data center. The use case could be based on mission critical applications, data privacy, need for on demand scalability, high availability etc.
+* Managed cloud services provides enterprise an option to outsource the management of the cloud infrastructure and services to a third party company like Rackspace or Expedient. Again the managed cloud service option depends on the need of usage. Managed services can be leveraged on private cloud, public cloud or companies like Rackspace,Expedient provide their own data cnters which can be dedicated completely to an enterprise for their infrastructure needs and managed by the providers. Rackspace for example uses Openstack software for their managed cloud services solution.
+
+Now with the knowledge of above concepts, it's clear to define the cloud strategy. Keeping in mind the requirements of GDPR compliance and the responsibility of data controllers and data processors, a cloud solution can be chosen which is secured, robust, optimized and cost effective.
+Highly secured and sensitive data, for example HIPAA, can be managed in a private cloud or hybrid cloud. Other sensitive personal data which requires services of third party for analytics generation like movie recommendation apps, shopping recommendation, election surveys, likes, social mining etc. can leverage public cloud scaling in a virtual private network utilizing GDPR compliant cloud data processor and rules and security defined by data controllers.
+How GDPR and other data privacy compliances will shift the revenue model of major cloud vendors will be an interesting trend to observer. The trend will also relfect choice of enterprises for cloud solution provider in their journey to achieve less overhead of maintaining data centers, achieving scalability and at the same time protecting the interests of data subjects. 
 
 # Common Vendors GDPR Readiness
+Major cloud solution vendors like AWS, GCP and Azure are GDPR compliant and offer resources, services and configurations which are GDPR ready. Other vendors offering specifically SaaS and PaaS are also GDPR compliant. Privacy statements of vendors has also been updated to reflect their GDPR readiness. Refer the following for major vendors GDPR readiness:
+
+* AWS
+https://aws.amazon.com/blogs/security/all-aws-services-gdpr-ready/
+
+* GCP
+https://cloud.google.com/blog/topics/inside-google-cloud/google-cloud-ready-for-gdpr
+
+* Azure
+https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Assess-GDPR-readiness-with-Microsoft-Cloud-App-Security/ba-p/250572
+
+Example of updated privacy policy in the wake of GDPR:
+
+* redhat
+https://www.redhat.com/en/about/privacy-policy
+
+Important takeaways from the privacy statement:
+* "The right to access your personal data;
+* The right to rectify the personal data we hold about you;
+* The right to erase your personal data;
+* The right to restrict our use of your personal data;
+* The right to object to our use of your personal data;
+* The right to receive your personal data in a usable electronic format and transmit it to a third party (also known as the right of data portability); and
+* The right to lodge a complaint with your local data protection authority;""
 
 # References
 * https://eugdpr.org/the-regulation/
@@ -54,4 +91,5 @@ The complexity of this compliance may cause changes to how the cloud computing i
 * https://aws.amazon.com/compliance/gdpr-center/
 * https://www.zdnet.com/article/gdpr-an-executive-guide-to-what-you-need-to-know/
 *  https://d1.awsstatic.com/whitepapers/compliance/GDPR_Compliance_on_AWS.pdf
-*
+* https://www.expedient.com/blog/private-vs-public-cloud-whats-difference/
+* https://www.redhat.com/en/about/privacy-policy
