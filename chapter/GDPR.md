@@ -24,8 +24,24 @@ Organizations which collect and direct the personal data and define mandate on h
 For example an organization like Airbnb collects personal data of it's users and customers and controls the usage of the personal data like how and where it will be stored, how it will be used - for example providing rental suggestions or generating analytics on usage statistics. Airbnb uses AWS as it's operation infrastructure. In this example AWS is data controller where as AWS acts as data processor.
 AWS also acts as data controller for the data it collects like user account registration information of it's customers, administration, service access etc.
 GDPR defines collective responsibility for both data processors and data controllers for safeguarding personal data.
+The defining of roles can be extended further if there is a third party involved between cloud solution vendors and cloud users. For example if a company is using services of a third party and the third party is using cloud solution vendors directly then the roles should be understood clearly for being GDPR compliant and avoiding audit and fines.
+Now we have understood the difference between data processors and data controllers, let's look in to it's impact on cloud computing by relating it to GDPR.
 
 # Impact On Cloud Computing
+GDPR imposes collective responsibility on data controllers and data processors for personal data protection. Organizations or cloud users who deal with the personal data of their customers or consumers of their applications have to be careful in choosing a cloud solution which is GDPR compliant and provides infrastructure and services options which are GDPR compliant. Data controllers should be able to define data privacy and security operations within the cloud infrastructure. Taking example of AWS as data processor, the resources like EC2, EBS, Amazon VPC all provide operations mechanism for a data controller to configure for optimum data privacy and security. At the same time, AWS as a data processor needs to disclose in its contract with the data controller the options it provides for data storage and region and location for each chosen services.
+Since data protection is a collective responsibility and design by principle, the data controller will have to keep the following chechk list when choosing a cloud solution provider:
+* Options to configure resources and desired settings as related to the data Privacy
+* Ability to get snapshot of the current configurations in cloud
+* On deman retrieval of configurations
+* Historical logging
+* Ability to get automatically notified of any changes in configuration
+* View how resources are related in cloud infrastructure
+* Ability of cloud provider to encrypt the data either in transit or rest
+* Options to set data access controls - granular access to data, multi factor authentication, geo-restirictions on data access
+
+In summary, data controllers should define and are responsible for defining all data privacy and security rules when using a cloud infrastructure and resources. Data processors are responsible for providing resources and services to be GDPR compliant. If the processing happens with a third party, the information needs to be disclosed and again the responsibility is collective.
+The complexity of this compliance may cause changes to how the cloud computing infrastructure is used by organizations. The debate would be between private or public cloud for services which deal with the personal data. Let's look more in detail in next section.
+
 
 # Public or Private Cloud
 
@@ -37,3 +53,5 @@ GDPR defines collective responsibility for both data processors and data control
 * https://www.cloudsigma.com/gdpr-and-cloud-computing-challenges-and-opportunities/
 * https://aws.amazon.com/compliance/gdpr-center/
 * https://www.zdnet.com/article/gdpr-an-executive-guide-to-what-you-need-to-know/
+*  https://d1.awsstatic.com/whitepapers/compliance/GDPR_Compliance_on_AWS.pdf
+*
