@@ -4,6 +4,7 @@ owner:
   lastname: "Joshi"
   hid: "fa18-516-08"
   community: "e516"
+  semester: "fa18"
 section:
     - title: Azure Functions
       url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/section/AzureFunctions.md
