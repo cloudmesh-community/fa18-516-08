@@ -10,7 +10,7 @@
 European Union's General Data Protection Regulation (GDPR) came in to effect on May 25, 2018. In this chapter we will cover the guidance of GDPR to cloud computing and how it applies to the businesses inside and outside European Union. We will touch upon the terms data processor and data controllers for cloud computing as related to GDPR compliance. We will also cover GDPR readiness and privacy statements of some common cloud vendors like Amazon, Microsoft and Google. We will also present general market outlook in the wake of GDPR for preference of public vs private cloud.
 
 # GDPR Compliance
-The core of the GDPR comliance is to protect EU citizens from privacy and data breaches ("GDPR Key Challenges",https://eugdpr.org/the-regulation/).
+The core of the GDPR comliance is to protect EU citizens from privacy and data breaches ("GDPR Key Challenges",https://eugdpr.org/the-regulation/). It aims to give back the control of personal data to citizens and residents.
 
 We may wonder that GDPR is applicable only for protecting EU citizens and the organizations based outside of EU need not be GDPR compliant. However, GDPR applies to any organization with business in EU and collect,store and process data of EU citizens. With the digital age and the organizations moving towards cloud computing, the GDPR brings new challenges both for cloud computing vendors who have data centers in EU as well as for organizations like Uber, Visa, Apple and many more who are ubiquitous in their business models and deal with EU citizens personal data.
 
@@ -27,11 +27,13 @@ Now that we are familiar with the GDPR compliance, in next sections we will look
 # Data Processor vs Data Controller
 Cloud solutions like AWS, Azure, GCP are all considered data processors because they offer resources and infrastructure to porcess the data.
 
-Organizations which collect and direct the personal data and define mandate on how the collected personal data is processed are known as data controllers.
+Organizations,authority or agency which collect and direct the personal data and define mandate on how the collected personal data is processed are known as data controllers.
 
 For example an organization like Airbnb collects personal data of its users and customers and controls the usage of the personal data like how and where it is stored, how it is used - such as providing rental suggestions or generating analytics on usage statistics. Airbnb uses AWS as it's operation infrastructure. In this example AWS is data controller where as AWS acts as data processor.
 
 AWS also acts as data controller for the data it collects like user account registration information of its customers, administration, service access etc.
+
+Collection, storage, recording, organizing, structuring, alteration, consultation, retrieval, sharing, restriction and erasing and destruction all come under  personal data processing.
 
 GDPR defines collective responsibility for both data processors and data controllers for safeguarding personal data.
 
@@ -91,6 +93,8 @@ Now with the knowledge of above concepts, it's clear to define the cloud strateg
 
 Highly secured and sensitive data, for example HIPAA, can be managed in a private cloud or hybrid cloud. Other sensitive personal data which requires services of third-party for analytics generation like movie recommendation apps, shopping recommendation, election surveys, likes, social mining etc. can leverage public cloud scaling in a virtual private network utilizing GDPR compliant cloud data processor and rules and security defined by data controllers.
 
+One important consideration is while using opensource solution like Openstack. Openstack can be used in a managed cloud service setting or independently for private cloud solution. The key is to use open source resources and their configurations which provide robust data security for compute, storage, network etc. which are integrated in Openstack software. 
+
 How GDPR and other data privacy compliances will shift the revenue model of major cloud vendors will be an interesting trend to observer. The trend will also relfect choice of enterprises for cloud solution provider in their journey to achieve less overhead of maintaining data centers, achieving scalability and at the same time protecting the interests of data subjects.
 
 # Common Vendors GDPR Readiness
@@ -128,3 +132,4 @@ Important takeaways from the privacy statement:
 *  https://d1.awsstatic.com/whitepapers/compliance/GDPR_Compliance_on_AWS.pdf
 * https://www.expedient.com/blog/private-vs-public-cloud-whats-difference/
 * https://www.redhat.com/en/about/privacy-policy
+* https://archive.fosdem.org/2018/schedule/event/vai_openstack_gdpr_compliance/attachments/slides/2570/export/events/attachments/vai_openstack_gdpr_compliance/slides/2570/Openstack_compliance_with_GDPR.pdf
