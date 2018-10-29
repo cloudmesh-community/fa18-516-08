@@ -12,11 +12,11 @@ European Union's General Data Protection Regulation (GDPR) came in to effect on 
 
 # GDPR Compliance
 
-The core of the GDPR comliance is to protect EU citizens from privacy and data breaches ("GDPR Key Challenges",https://eugdpr.org/the-regulation/). It aims to give back the control of personal data to citizens and residents.
+The core of the GDPR comliance is to protect EU citizens from privacy and data breaches [@www-GDPR Key Changes]. It aims to give back the control of personal data to citizens and residents.
 
 We may wonder that GDPR is applicable only for protecting EU citizens and the organizations based outside of EU need not be GDPR compliant. However, GDPR applies to any organization with business in EU and collect,store and process data of EU citizens. With the digital age and the organizations moving towards cloud computing, the GDPR brings new challenges both for cloud computing vendors who have data centers in EU as well as for organizations like Uber, Visa, Apple and many more who are ubiquitous in their business models and deal with EU citizens personal data.
 
-https://gdpr-info.eu/art-4-gdpr/  lists personal data as defined in Article 4 of GDPR - "‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;" In simpler language it could be any information like identification number (US equivalent for SSN),phone number, address, birth date, IP address etc. which can uniquely identify a person.
+[@www-GDPR Definitions] lists personal data as defined in Article 4 of GDPR - "‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;" In simpler language it could be any information like identification number (US equivalent for SSN),phone number, address, birth date, IP address etc. which can uniquely identify a person.
 
 GDPR compliance poses strict fines for any personal data breach. Fines are either up to EUR 20 million or 4 % of annual revenue, which ever is higher.
 
@@ -79,9 +79,9 @@ Let's define few terms before we dig deep into the choice of public or private c
 
 
 
-* Private cloud is an internal or enterprise dedicated cloud where data center resides and belongs to the enterprise and is behind enterprise firewall. The enterprise is solely responsible for managing and scaling the infrastructure as needed. Examples are AT&T, Cisco, T-Mobile have their own private cloud hosted in their own data centers.
+* Private cloud is an internal or enterprise dedicated cloud where data center resides and belongs to the enterprise and is behind enterprise firewall[@www-expedient]. The enterprise is solely responsible for managing and scaling the infrastructure as needed. Examples are AT&T, Cisco, T-Mobile have their own private cloud hosted in their own data centers.
 
-* Public cloud is a multi-tenant architecture where  the cloud infrastructure provider hosts many enterprises in its data centers. The enterprises and  their data are virtually separated in the data center and enterprises have their own virtual private cloud network (example Amazon VPC). The cloud provider is responsible for managing and scaling the infrastructure at the data center. The enterprises can choose to individually upgrade and update the resources for patching, security etc. Examples are AWS, GCP, Azure.
+* Public cloud is a multi-tenant architecture where  the cloud infrastructure provider hosts many enterprises in its data centers[@www-expedient]. The enterprises and  their data are virtually separated in the data center and enterprises have their own virtual private cloud network (example Amazon VPC). The cloud provider is responsible for managing and scaling the infrastructure at the data center. The enterprises can choose to individually upgrade and update the resources for patching, security etc. Examples are AWS, GCP, Azure.
 
 
 
@@ -120,23 +120,11 @@ Example of updated privacy policy in the wake of GDPR:
 * redhat
 https://www.redhat.com/en/about/privacy-policy
 
-Important takeaways from the privacy statement:
-* "The right to access your personal data;
+Important takeaways from the RedHat privacy statement[@www-RedHat]:
+* The right to access your personal data;
 * The right to rectify the personal data we hold about you;
 * The right to erase your personal data;
 * The right to restrict our use of your personal data;
 * The right to object to our use of your personal data;
 * The right to receive your personal data in a usable electronic format and transmit it to a third party (also known as the right of data portability); and
-* The right to lodge a complaint with your local data protection authority;""
-
-# References
-
-* https://eugdpr.org/the-regulation/
-* https://gdpr-info.eu/art-4-gdpr/
-* https://www.cloudsigma.com/gdpr-and-cloud-computing-challenges-and-opportunities/
-* https://aws.amazon.com/compliance/gdpr-center/
-* https://www.zdnet.com/article/gdpr-an-executive-guide-to-what-you-need-to-know/
-*  https://d1.awsstatic.com/whitepapers/compliance/GDPR_Compliance_on_AWS.pdf
-* https://www.expedient.com/blog/private-vs-public-cloud-whats-difference/
-* https://www.redhat.com/en/about/privacy-policy
-* https://archive.fosdem.org/2018/schedule/event/vai_openstack_gdpr_compliance/attachments/slides/2570/export/events/attachments/vai_openstack_gdpr_compliance/slides/2570/Openstack_compliance_with_GDPR.pdf
+* The right to lodge a complaint with your local data protection authority;
