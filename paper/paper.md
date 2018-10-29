@@ -107,17 +107,21 @@ How GDPR and other data privacy compliances will shift the revenue model of majo
 Major cloud solution vendors like AWS, GCP and Azure are GDPR compliant and offer resources, services and configurations which are GDPR ready. Other vendors offering specifically SaaS and PaaS are also GDPR compliant. Privacy statements of vendors has also been updated to reflect their GDPR readiness. Refer the following for major vendors GDPR readiness:
 
 * AWS
+
 https://aws.amazon.com/blogs/security/all-aws-services-gdpr-ready/
 
 * GCP
+
 https://cloud.google.com/blog/topics/inside-google-cloud/google-cloud-ready-for-gdpr
 
 * Azure
+
 https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Assess-GDPR-readiness-with-Microsoft-Cloud-App-Security/ba-p/250572
 
 Example of updated privacy policy in the wake of GDPR:
 
 * redhat
+
 https://www.redhat.com/en/about/privacy-policy
 
 Important takeaways from the RedHat privacy statement[@www-RedHat]:
