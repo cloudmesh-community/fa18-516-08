@@ -125,3 +125,5 @@ __Step 18__ : Another test
 
 This completes our demo for Google Cloud Function offered as Function as Service. To learn more about Google Cloud Functions and trigger options available alongwith triggers using command line - visit
 [https://cloud.google.com/functions/]
+
+To learn about creating and deploying functions using command line instead of GCP console - visit [https://cloud.google.com/functions/docs/quickstart]
