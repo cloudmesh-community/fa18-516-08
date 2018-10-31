@@ -1,4 +1,4 @@
-# GDPR Compliance and Cloud Computing :hand: fa18-516-08
+# GDPR Compliance and Cloud Computing :smiley: fa18-516-08
 
 | Varun Joshi
 | vajoshi@iu.edu
