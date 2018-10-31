@@ -6,11 +6,11 @@
 | hid: fa18-516-08
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-08/blob/master/chapter/GDPR.md)
 
-# Introduction
+## Introduction
 
 European Union's General Data Protection Regulation (GDPR) came in to effect on May 25, 2018. In this chapter we will cover the guidance of GDPR to cloud computing and how it applies to the businesses inside and outside European Union. We will touch upon the terms data processor and data controllers for cloud computing as related to GDPR compliance. We will also cover GDPR readiness and privacy statements of some common cloud vendors like Amazon, Microsoft and Google. We will also present general market outlook in the wake of GDPR for preference of public vs private cloud.
 
-# GDPR Compliance
+## GDPR Compliance
 
 The core of the GDPR comliance is to protect EU citizens from privacy and data breaches [@www-GDPR Key Changes]. It aims to give back the control of personal data to citizens and residents.
 
@@ -26,7 +26,7 @@ In technical terms to be GDPR compliant, specifically for cloud computing use ca
 
 Now that we are familiar with the GDPR compliance, in next sections we will look into it's impact specifically for cloud computing platform and data privacy in cloud data centers. Before that, let's define Data Processor and Data controller with respect to cloud and as related to GDPR.
 
-# Data Processor vs Data Controller
+## Data Processor vs Data Controller
 
 Cloud solutions like AWS, Azure, GCP are all considered data processors because they offer resources and infrastructure to porcess the data.
 
@@ -44,7 +44,7 @@ The defining of roles extends further if there is a third-party involved between
 
 Now we have understood the difference between data processors and data controllers, let's look in to its impact on cloud computing by relating it to GDPR.
 
-# Impact On Cloud Computing
+## Impact On Cloud Computing
 
 GDPR imposes collective responsibility on data controllers and data processors for personal data protection. Organizations or cloud users who deal with the personal data of their customers or consumers of their applications should be careful in choosing a cloud solution which is GDPR compliant and provides infrastructure and services options which are GDPR compliant. Data controllers should have options to define data privacy and security operations within the cloud infrastructure. Taking example of AWS as data processor, the resources like EC2, EBS, Amazon VPC all offer operations mechanism for a data controller to configure for robust data privacy and security. At the same time, AWS as a data processor needs to disclose in its contract with the data controller the options it provides for data storage and region and site for each chosen services.
 
@@ -73,7 +73,7 @@ In summary, data controllers should define and are responsible for defining all 
 Complexity the compliance may cause changes to how the cloud computing infrastructure is used by the organizations. The debate would be between private or public cloud for services which deal with the personal data. Let's look more in detail in next section.
 
 
-# Public or Private Cloud
+## Public or Private Cloud
 
 Let's define few terms before we dig deep into the choice of public or private cloud given GDPR compliance.
 
@@ -102,27 +102,27 @@ One important consideration is while using opensource solution like Openstack. O
 
 How GDPR and other data privacy compliances will shift the revenue model of major cloud vendors will be an interesting trend to observer. The trend will also relfect choice of enterprises for cloud solution provider in their journey to achieve less overhead of maintaining data centers, achieving scalability and at the same time protecting the interests of data subjects.
 
-# Common Vendors GDPR Readiness
+## Common Vendors GDPR Readiness
 
 Major cloud solution vendors like AWS, GCP and Azure are GDPR compliant and offer resources, services and configurations which are GDPR ready. Other vendors offering specifically SaaS and PaaS are also GDPR compliant. Privacy statements of vendors has also been updated to reflect their GDPR readiness. Refer the following for major vendors GDPR readiness:
 
 * AWS
 
-https://aws.amazon.com/blogs/security/all-aws-services-gdpr-ready/
+[https://aws.amazon.com/blogs/security/all-aws-services-gdpr-ready/]
 
 * GCP
 
-https://cloud.google.com/blog/topics/inside-google-cloud/google-cloud-ready-for-gdpr
+[https://cloud.google.com/blog/topics/inside-google-cloud/google-cloud-ready-for-gdpr]
 
 * Azure
 
-https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Assess-GDPR-readiness-with-Microsoft-Cloud-App-Security/ba-p/250572
+[https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Assess-GDPR-readiness-with-Microsoft-Cloud-App-Security/ba-p/250572]
 
 Example of updated privacy policy in the wake of GDPR:
 
 * redhat
 
-https://www.redhat.com/en/about/privacy-policy
+[https://www.redhat.com/en/about/privacy-policy]
 
 Important takeaways from the RedHat privacy statement[@www-RedHat]:
 * The right to access your personal data;
