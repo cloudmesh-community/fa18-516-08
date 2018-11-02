@@ -49,8 +49,8 @@ citizens personal data.
 [@www-GDPR Definitions] lists personal data as defined in Article 4 of
 GDPR:
 
-> "‘personal data’ means any information relating to an identified or
-> identifiable natural person (‘data subject’); an identifiable
+> "*personal data* means any information relating to an identified or
+> identifiable natural person (*data subject*); an identifiable
 > natural person is one who can be identified, directly or indirectly,
 > in particular by reference to an identifier such as a name, an
 > identification number, location data, an online identifier or to one
@@ -90,6 +90,7 @@ will look into it's impact specifically for cloud computing platform
 and data privacy in cloud data centers. Before that, let's define Data
 Processor and Data controller with respect to cloud and as related to
 GDPR.
+
 
 ### Data Processor vs Data Controller
 
@@ -185,6 +186,7 @@ personal data. Let's look more in detail in next section.
 
 ### Public or Private Cloud
 
+<<<<<<< HEAD
 Let's define few terms before we dig deep into the choice of public or
 private cloud given GDPR compliance.
 
@@ -264,6 +266,7 @@ provider in their journey to achieve less overhead of maintaining data
 centers, achieving scalability and at the same time protecting the
 interests of data subjects.
 
+
 ### Common Vendors GDPR Readiness
 
 Major cloud solution vendors like AWS, GCP and Azure are GDPR
@@ -299,7 +302,9 @@ that Redhat claims the following rights:
 * The right to erase your personal data;
 * The right to restrict our use of your personal data;
 * The right to object to our use of your personal data;
-* The right to receive your personal data in a usable electronic format and transmit it to a third party (also known as the right of data portability); and
+* The right to receive your personal data in a usable electronic
+  format and transmit it to a third party (also known as the right of
+  data portability); and
 * The right to lodge a complaint with your local data protection authority;
 
 :o: it is  unclear in what relationship this is used and on
