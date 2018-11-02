@@ -6,9 +6,15 @@
 | hid: fa18-516-08
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-08/blob/master/paper/paper.md)
 
+:o: Add Learning outcome
+
 ## Introduction
 
-European Union's General Data Protection Regulation (GDPR) came in to effect on May 25, 2018. In this chapter we will cover the guidance of GDPR to cloud computing and how it applies to the businesses inside and outside European Union. We will touch upon the terms data processor and data controllers for cloud computing as related to GDPR compliance. We will also cover GDPR readiness and privacy statements of some common cloud vendors like Amazon, Microsoft and Google. We will also present general market outlook in the wake of GDPR for preference of public vs private cloud.
+European Union's General Data Protection Regulation (GDPR) came in to effect on May 25, 2018. 
+
+:o: this is not an introduction, but an explanation what is covered, which is fine. But so far there is no information covered, and we may need to discuss if this shuld be changed or deleted. we also need a learning outcome section as we use in other epubs. The general qustion should be if this chapter is actually CLoud COMputing and provacy and GDPR is a subsection to it.
+
+We will cover the guidance of GDPR to cloud computing and how it applies to the businesses inside and outside European Union. We will touch upon the terms data processor and data controllers for cloud computing as related to GDPR compliance. We will also cover GDPR readiness and privacy statements of some common cloud vendors like Amazon, Microsoft and Google. We will also present general market outlook in the wake of GDPR for preference of public vs private cloud.
 
 ## GDPR Compliance
 
@@ -16,7 +22,11 @@ The core of the GDPR comliance is to protect EU citizens from privacy and data b
 
 We may wonder that GDPR is applicable only for protecting EU citizens and the organizations based outside of EU need not be GDPR compliant. However, GDPR applies to any organization with business in EU and collect,store and process data of EU citizens. With the digital age and the organizations moving towards cloud computing, the GDPR brings new challenges both for cloud computing vendors who have data centers in EU as well as for organizations like Uber, Visa, Apple and many more who are ubiquitous in their business models and deal with EU citizens personal data.
 
-[@www-GDPR Definitions] lists personal data as defined in Article 4 of GDPR - "‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;" In simpler language it could be any information like identification number (US equivalent for SSN),phone number, address, birth date, IP address etc. which can uniquely identify a person.
+[@www-GDPR Definitions] lists personal data as defined in Article 4 of GDPR - 
+
+> "‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;" 
+
+In simpler language it could be any information like identification number (US equivalent for SSN),phone number, address, birth date, IP address etc. which can uniquely identify a person.
 
 GDPR compliance poses strict fines for any personal data breach. Fines are either up to EUR 20 million or 4 % of annual revenue, which ever is higher.
 
@@ -86,7 +96,6 @@ Let's define few terms before we dig deep into the choice of public or private c
 
 
 Based on the above concepts, there could be multiple iterations of the cloud solution.
-
 
 
 * Hybrid cloud is one such solution where there is a mix usage of on premise data center and public cloud data center. The use case could be based on mission critical applications, data privacy, need for on demand scalability, high availability etc.
