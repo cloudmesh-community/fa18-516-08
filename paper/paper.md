@@ -1,4 +1,4 @@
-# Cloud and Privacy
+# Cloud and Privacy :smiley: fa18-516-08
 
 
 | Varun Joshi
@@ -11,9 +11,7 @@
 
 The general qustion should be if this chapter is actually CLoud COMputing and provacy and GDPR is a subsection to it.
 
-## GDPR Compliance and Cloud Computing :smiley: fa18-516-08
-
-### Introduction
+## GDPR Compliance and Cloud Computing 
 
 European Union's General Data Protection Regulation (GDPR) came in to effect on May 25, 2018. 
 
