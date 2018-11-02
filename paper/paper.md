@@ -27,7 +27,7 @@ We may wonder that GDPR is applicable only for protecting EU citizens and the or
 
 [@www-GDPR Definitions] lists personal data as defined in Article 4 of GDPR - 
 
-> "‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;" 
+> "*personal data* means any information relating to an identified or identifiable natural person (*data subject*); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;" 
 
 In simpler language it could be any information like identification number (US equivalent for SSN),phone number, address, birth date, IP address etc. which can uniquely identify a person.
 
@@ -88,18 +88,14 @@ Complexity the compliance may cause changes to how the cloud computing infrastru
 
 ### Public or Private Cloud
 
-Let's define few terms before we dig deep into the choice of public or private cloud given GDPR compliance.
-
-
+Let us define few terms before we dig deep into the choice of public or private cloud given GDPR compliance.
 
 * Private cloud is an internal or enterprise dedicated cloud where data center resides and belongs to the enterprise and is behind enterprise firewall[@www-expedient]. The enterprise is solely responsible for managing and scaling the infrastructure as needed. Examples are AT&T, Cisco, T-Mobile have their own private cloud hosted in their own data centers.
 
 * Public cloud is a multi-tenant architecture where  the cloud infrastructure provider hosts many enterprises in its data centers[@www-expedient]. The enterprises and  their data are virtually separated in the data center and enterprises have their own virtual private cloud network (example Amazon VPC). The cloud provider is responsible for managing and scaling the infrastructure at the data center. The enterprises can choose to individually upgrade and update the resources for patching, security etc. Examples are AWS, GCP, Azure.
 
 
-
 Based on the above concepts, there could be multiple iterations of the cloud solution.
-
 
 * Hybrid cloud is one such solution where there is a mix usage of on premise data center and public cloud data center. The use case could be based on mission critical applications, data privacy, need for on demand scalability, high availability etc.
 
