@@ -1,3 +1,11 @@
+# DEPRECATED
+
+This has been moved to. 
+<https://github.com/cloudmesh-community/book/blob/master/chapters/faas/google-cloud-functions.md>
+
+
+Delete this section from this repo as to not have duplicates from which one is no longer developed.
+
 # Google Cloud Functions :smiley: fa18-516-08
 
 | Varun Joshi, Gregor von Laszewski
