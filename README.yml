@@ -1,13 +1,13 @@
 ---
 owner:
-  firstname: "Varun"
-  lastname: "Joshi"
-  hid: "fa18-516-08"
-  community: "e516"
-  semester: "fa18"
+  firstname: Varun
+  lastname: Joshi
+  hid: fa18-516-08
+  community: e516
+  semester: fa18
 section:
     - title: Azure Functions
-      url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/section/AzureFunctions.md
+      url: https://github.com/cloudmesh-community/book/edit/master/chapters/faas/microsoft-azure-functions.md
     - title: Google Cloud Functions
       url: https://github.com/cloudmesh-community/book/blob/master/chapters/faas/google-cloud-functions.md
 paper:
