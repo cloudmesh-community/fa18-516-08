@@ -186,8 +186,7 @@ personal data. Let's look more in detail in next section.
 
 ### Public or Private Cloud
 
-<<<<<<< HEAD
-Let's define few terms before we dig deep into the choice of public or
+Let us define few terms before we dig deep into the choice of public or
 private cloud given GDPR compliance.
 
 :o: this has been defined elsewjeer in the book and eiither shoudl be
