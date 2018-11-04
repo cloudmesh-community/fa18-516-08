@@ -1,4 +1,4 @@
-# Cloud and Privacy :smiley: fa18-516-08
+# Cloud and Privacy :wave: fa18-516-08
 
 
 | Varun Joshi
@@ -9,8 +9,14 @@
 
 :o: Add Learning outcome
 
+:o: introduction focusses to much about what we will learn, focus on content, use the learning outcome bullet section we use in the handbook instead
+
+:o: introduce the problem instead
+
+:o: bibtex issues
+
 The general qustion should be if this chapter is actually CLoud
-COMputing and provacy and GDPR is a subsection to it.
+CoMputing and provacy and GDPR is a subsection to it.
 
 ## GDPR Compliance and Cloud Computing 
 
