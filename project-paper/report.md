@@ -19,12 +19,12 @@ This project attempts to evaluate ETL tasks and performance across AWS, Azure an
 
 ## Design
 
-. Setup Linux Instance on Cloud platforms
-. Install MongoDb
-. Built FaaS on each Cloud Platform
-. Configure network security for FaaS to communicate with MongoDb
-. Use HTTP trigger for Keywords to call FaaS and generate CSV
-. Generate runtime statistics
+1. Setup Linux Instance on Cloud platforms
+2. Install MongoDb
+3. Built FaaS on each Cloud Platform
+4. Configure network security for FaaS to communicate with MongoDb
+5. Use HTTP trigger for Keywords to call FaaS and generate CSV
+6. Generate runtime statistics
 
 ## Architecture
 
