@@ -11,7 +11,7 @@ Keywords: FaaS, ETL, ETL Performance
 
 ## Abstract
 
-The goal of this project is to perform Extract Transform and Load (ETL) operations in cloud exploring Function As A Service. Serverless computing eliminates the overhead of provisioning and managing servers and scales automatically for performing tasks. This project also attempts to evaluate FaaS offerings of major cloud providers namely AWS, Azure and Google Cloud against similar set of ETL tasks and operations. The end goal will be to compare side by side FaaS runtime statistics. The benchmark will be set by provisioning an EC2 instance and performing ETL without using FaaS.
+Extract, transform and load in simplest terms is extracting data from a source and then transforming that data into a desired format by applying business or formatting rules and then loading it in to a target for further processing or analysis.The goal of this project is to perform Extract Transform and Load (ETL) operations in cloud exploring Function As A Service. Serverless computing eliminates the overhead of provisioning and managing servers and scales automatically for performing tasks. As ETL can deal with huge sets of data, this project will explore FaaS for adhoc data queries which run ETL in the background. This project also attempts to evaluate FaaS offerings of major cloud providers namely AWS, Azure and Google Cloud against similar set of ETL tasks and operations. The end goal will be to compare side by side FaaS runtime statistics. The benchmark will be set by provisioning an EC2 instance and performing ETL without using FaaS.
 
 ## Introduction
 
