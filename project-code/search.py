@@ -13,4 +13,4 @@ def invoke_lambda(text,filename):
     #t_text = br.StreamingBody(raw_stream=res,content_length=23).read(amt=None).decode("utf-8")
     #print (t_text)
 if __name__ == "__main__":
-    invoke_lambda(sys.argv[1])
+    invoke_lambda(sys.argv[1],sys.argv[2])
