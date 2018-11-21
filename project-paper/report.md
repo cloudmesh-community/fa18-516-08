@@ -1,30 +1,36 @@
-# ETL and Comparing Performance  Across Cloud Platforms Using FaaS :hand:fa18-516-08
+# Text search utility using AWS Lambda exposed as REST :hand:fa18-516-08
 
 | Varun Joshi | vajoshi@iu.edu | Indiana University | hid: fa18-516-08 | github:
 [:cloud:](https://github.com/cloudmesh-community/fa18-516-08/blob/master/project-paper/report.md)
 
 ---
 
-Keywords: FaaS, ETL, ETL Performance
+Keywords: FaaS, Lambda, search, text search, REST,OpenAPI example
 
 ---
 
 ## Abstract
 
-Extract, transform and load in simplest terms is extracting data from a source and then transforming that data into a desired format by applying business or formatting rules and then loading it in to a target for further processing or analysis.The goal of this project is to perform Extract Transform and Load (ETL) operations in cloud exploring Function As A Service. Serverless computing eliminates the overhead of provisioning and managing servers and scales automatically for performing tasks. As ETL can deal with huge sets of data, this project will explore FaaS for adhoc data queries which run ETL in the background. This project also attempts to evaluate FaaS offerings of major cloud providers namely AWS, Azure and Google Cloud against similar set of ETL tasks and operations. The end goal will be to compare side by side FaaS runtime statistics. The benchmark will be set by provisioning an EC2 instance and performing ETL without using FaaS.
+Amazon's Function as Service offering, AWS Lambda, provides serverless computing and eliminates the overhead of provisioning and managing servers. Lambda scales automatically for performing high demanding compute tasks.
+AWS Lambda can also integrate with other AWS services like S3 and Dynamo DB, extending it's capabilities for building high scale applications. Once such application could be a text search utility which searches for a specific user provided text  in a user provided file which is stored as an object in Amazon S3. The aim of this project is to build a text search utility application and provide users a simple REST service to view the search results.
 
 ## Introduction
 
-This project attempts to evaluate ETL tasks and performance across AWS, Azure and GCP using FaaS. The project utilizes all three cloud platforms, Python runtime environment for FaaS, similar sized Linux instances for hosting MongoDb as the source Database and publicly available Twitter dataset for tweets during Hurricane Harvey. The Python function will extract data from MongoDb based on keywords and export the results in CSV which can be used for further processing.
+The goal of this project is to build a search utility by invoking AWS Lambda function which reads a file object in Amazon S3 and directs the search results to a REST webservice. The project attempts to showcase the AWS Lambda, FaaS and REST learning and implementation for building a text search utility.
 
 ## Design
 
-1. Setup Linux Instance on Cloud platforms
-2. Install MongoDb
-3. Built FaaS on each Cloud Platform
-4. Configure network security for FaaS to communicate with MongoDb
-5. Use HTTP trigger for Keywords to call FaaS and generate CSV
-6. Generate runtime statistics
+1. Setup AWS free tier account
+2. Launch an EC2 instance
+3. Install required tools for generating Swagger server side stub for building REST API
+4. Import all Python packages required on EC2 - boto3 for invoking AWS Lambda Function
+5. Create AWS S3 bucket and configure required permissions. Upload a test file required for demonstrating the project implementation.
+6. Create IAM role for allowing Lambda to access S3
+6. Create AWS Lambda function
+7. Host REST API on EC2
+8. Test the utility
+9. Automate all tasks performed on AWS console
+
 
 ## Architecture
 
