@@ -15,7 +15,7 @@ paper:
       keyword: GDPR
       url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/paper/paper.md         
 project:
-    - title: TBD
+    - title: "Text Search Utility Using AWS Lambda Exposed As REST"
       url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/project-paper/report.md
 other:
     - activity: TBD
