@@ -15,6 +15,8 @@
 
 :o: bibtex issues
 
+:o: urls done wrong
+
 The general qustion should be if this chapter is actually CLoud
 CoMputing and provacy and GDPR is a subsection to it.
 
