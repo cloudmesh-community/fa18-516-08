@@ -161,23 +161,14 @@ list [@www-aws] when choosing a cloud solution provider:
 
 * Options to configure resources and desired settings as related to
   the data Privacy
-
 * Ability to get snapshot of the current configurations in cloud
-
 * On demand retrieval of configurations
-
 * Historical logging
-
 * Ability to get automatically notified of any changes in configuration
-
 * View how resources communicate in cloud infrastructure
-
 * Ability of cloud provider to encrypt the data either in transit or rest
-
 * Options to set data access controls - granular access to data, multi
   factor authentication, geo-restrictions on data access
-
-
 
 In summary, data controllers should define and are responsible for
 defining all data privacy and security rules when using a cloud
@@ -207,10 +198,8 @@ use the terms here with a back refernce to that section.
   responsible for managing and scaling the infrastructure as needed.
   Examples are AT&T, Cisco, T-Mobile have their own private cloud hosted
   in their own data centers.
-
   :o: the nist definition must be used first. Expedinet did not defin
   these terms but nist did
-
 * Public cloud is a multi-tenant architecture where  the cloud
   infrastructure provider hosts many
   enterprises in its data centers [@www-expedient].
@@ -233,7 +222,6 @@ cloud solution.
   premise data center and public cloud data center. The use case could
   be based on mission critical applications, data privacy, need for on
   demand scalability, high availability etc.
-
 * Managed cloud services provides enterprise an option to outsource
   the management of the cloud infrastructure and services to a
   third-party company like Rackspace or Expedient. Again the managed
@@ -282,6 +270,8 @@ GDPR ready. Other vendors offering specifically SaaS and PaaS are also
 GDPR compliant. Privacy statements of vendors has also been updated to
 reflect their GDPR readiness. Refer the following for major vendors
 GDPR readiness:
+
+:o: wrong
 
 * AWS
 
