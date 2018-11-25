@@ -1,0 +1,71 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: "REST API for AWS Lambda CRUD Operation"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    name: "AWS Lambda"
+  license:
+    name: "Apache"
+
+
+schemes:
+  - "http"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+paths:
+  /lambda/functions:
+    get:
+      tags:
+        - Lambda
+      operationId: lambda.list_aws_lambda
+      description: "lists all available Lambda Functions (limit 50)"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Lambda Functions"
+          schema:
+            $ref: "#/definitions/Lambda"
+  /lambda/function/{fname}:
+    get:
+      tags:
+      - Lambda
+      operationId: lambda.get_aws_lambda_by_name
+      produces:
+      - "application/json"
+      parameters:
+      - name: fname
+        in: path
+        type: string
+        required: True
+      responses:
+        "200":
+          description: "Function name to search"
+          schema:
+            $ref: "#/definitions/Lambda"
+
+    delete:
+        tags:
+        - Lambda
+        operationId: lambda.del_aws_lambda
+        parameters:
+        - name: fname
+          in: path
+          type: string
+          required: True
+        responses:
+          "200":
+            description: "Function name to delete"
+            schema:
+              $ref: "#/definitions/Lambda"
+definitions:
+  Lambda:
+    type: "object"
+    required:
+      - "result"
+    properties:
+      result:
+        type: "string"

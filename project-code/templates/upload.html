@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload AWS Lambda Deployment Package</title>
+</head>
+<body>
+<h1>Browse Deployment Package</h1>
+<form id="upload-deployment" action="{{ url_for('upload') }}"  method="POST" enctype = "multipart/form-data">
+
+<input type ="file" name = "file" >
+<input type ="submit" value = "upload">
+</form>
+
+</body>
+</html>
