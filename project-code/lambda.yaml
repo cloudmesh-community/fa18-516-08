@@ -110,10 +110,47 @@ paths:
             handler: lambda_handler
             cfile: hello.py
             pkg: hello.zip
-
       responses:
         "200":
           description: "Function Created"
+          schema:
+            $ref: "#/definitions/Lambda"
+    put:
+      tags:
+      - Lambda
+      operationId: lambda.upd_aws_lambda
+      summary: "Update AWS Lambda Function"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: fname
+        in: path
+        type: string
+        required: True
+      - name: updprop
+        description: Properties to Update for the AWS Lambda Function
+        in: body
+        schema:
+          type: object
+          properties:
+            Runtime:
+              type: string
+            Handler:
+              type: string
+            Role:
+              type: string
+            Description:
+              type: string
+            Timeout:
+              type: string
+            MemorySize:
+              type: string
+
+      responses:
+        "200":
+          description: "Function Updated"
           schema:
             $ref: "#/definitions/Lambda"
 

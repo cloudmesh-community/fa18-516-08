@@ -1,6 +1,7 @@
 #import all packages
 import boto3
 import config
+import re
 import json
 import os
 from flask import Flask,render_template,request
@@ -97,8 +98,11 @@ if __name__ == "__main__":
 # Function to update  AWS Lambda Function:
 
 def upd_aws_lambda(fname):
+
     ret = request.get_json()
-    return ret['renv']
+    proplist = ['Description','Handler','MemorySize','Runtime','Role','Timeout']
+    propdict= {k: ret[k] for k in proplist if k in ret}
+    return propdict
 
 
 
