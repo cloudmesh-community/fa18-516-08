@@ -22,6 +22,7 @@ paths:
       tags:
       - Deploy Package (Zip File) For Lambda
       operationId: lambda.upload
+      summary: "Upload zip file containing AWS Lambda Handler"
       consumes:
       - multipart/form-data
       parameters:
@@ -41,6 +42,7 @@ paths:
       tags:
         - Lambda
       operationId: lambda.list_aws_lambda
+      summary: "Get name of all AWS Lambda Functions"
       description: "lists all available Lambda Functions (limit 50)"
       produces:
         - "application/json"
@@ -49,11 +51,12 @@ paths:
           description: "Lambda Functions"
           schema:
             $ref: "#/definitions/Lambda"
-  /function{fname}:
+  /function/{fname}:
     get:
       tags:
       - Lambda
       operationId: lambda.get_aws_lambda_by_name
+      summary: "Get AWS Lambda function configuration by name"
       produces:
       - "application/json"
       parameters:
@@ -71,6 +74,7 @@ paths:
       tags:
       - Lambda
       operationId: lambda.create_aws_lambda
+      summary: "Create AWS Lambda Function"
       consumes:
       - "application/json"
       produces:
@@ -82,7 +86,7 @@ paths:
         type: string
         required: True
       - name: renv
-        description: Runtime environment for AWS Lambda Function(Accepted Values - ['nodejs','nodejs4.3','nodejs6.10','nodejs8.10','java8','python2.7','python3.6','python3.7','dotnetcore1.0','dotnetcore2.0','dotnetcore2.1','nodejs4.3-edge','go1.x']
+        description: Runtime environment for AWS Lambda Function.Accepted Values are('nodejs','nodejs4.3','nodejs6.10','nodejs8.10','java8','python2.7','python3.6','python3.7','dotnetcore1.0','dotnetcore2.0','dotnetcore2.1','nodejs4.3-edge','go1.x')
         in: query
         type: string
         required: True
@@ -112,6 +116,7 @@ paths:
         tags:
         - Lambda
         operationId: lambda.del_aws_lambda
+        summary: "Delete AWS Lambda Function by name"
         parameters:
         - name: fname
           in: path
