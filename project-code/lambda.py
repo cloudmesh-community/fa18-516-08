@@ -2,12 +2,16 @@
 import boto3
 import config
 import json
+import os
+from flask import Flask,render_template,request
 from botocore.exceptions import ClientError
+from create_lambda_basic_exec_role import get_role
+
 
 client = boto3.client('lambda', aws_access_key_id= config.AWS.AWS_ACCESS_KEY_ID,
                               aws_secret_access_key=config.AWS.AWS_SECRET_ACCESS_KEY, region_name=config.AWS.AWS_DEFAULT_REGION)
 
-#Function to list all available AWS Lambda functions for a user account in a region
+# Function to list all available AWS Lambda functions for a user account in a region
 
 def list_aws_lambda():
         lfunctions = []
@@ -21,7 +25,7 @@ if __name__ == "__main__":
     print(list_aws_lambda())
 
 
-#Function to list AWS Lambda function by name:
+# Function to list AWS Lambda function by name:
 
 def get_aws_lambda_by_name(fname):
     try:
@@ -38,16 +42,38 @@ def get_aws_lambda_by_name(fname):
 if __name__ == "__main__":
     print(get_aws_lambda_by_name('SearchText'))
 
-#Function to create AWS Lambda Function:
-def create_aws_lambda(fname,renv):
-    if renv in config.Runenv.runenv:
-        Runtime = renv
-    else:
-        return "{Error : Unsupported Runtime Env}"
-    #response = client.create_function(Functionname=fname,Runtime=Runtime,)
+# Function to create AWS Lambda Function:
+
+def create_aws_lambda(fname,renv,pkg,handler,func_name):
+    pkg = os.path.join(config.HOST.TGT_DIR, pkg)
+    py_file = os.path.splitext(func_name)[0]
+
+    Handler = py_file + "." + handler
+    print(Handler)
+
+    with open(pkg, 'rb') as f:
+        zipped_code = f.read()
+    try:
+        response = client.create_function(FunctionName=fname, Runtime=renv,
+                                          Role=get_role(),
+                                          Handler=Handler, Code=dict(ZipFile=zipped_code))
+        del response['ResponseMetadata']
+        return response
+    except ClientError as err:
+        if err.response['Error']['Code'] == 'ResourceConflictException':
+            e = "{Error : Function " + fname + " already exists}"
+            return e
+        else:
+            # return "{Error: Unexpected Error}"
+            return err
 
 
-#Function to delete AWS Lambda Function:
+if __name__ == "__main__":
+    print(create_aws_lambda('testDeploy2', 'python3.7', 'hello.zip','lambda_handler','hello.py'))
+
+
+# Function to delete AWS Lambda Function:
+
 def del_aws_lambda(fname):
     try:
         response = client.delete_function(FunctionName=fname)
@@ -62,3 +88,20 @@ def del_aws_lambda(fname):
             return "{Error: Unexpected Error}"
 if __name__ == "__main__":
     print(del_aws_lambda('hello'))
+
+# Function to Upload deployment package for creating Lambda Function
+
+def upload():
+    target_path = config.HOST.TGT_DIR
+    print(target_path)
+    if not os.path.isdir(target_path):
+        os.mkdir(target_path)
+
+    for f in request.files.getlist("pkg"):
+        #f = request.files("file")
+        print(f)
+        filename = f.filename
+        print(filename)
+        dest = "/".join([target_path,filename])
+        f.save(dest)
+    return "Zip File Deployment Package Uploaded Successfully"

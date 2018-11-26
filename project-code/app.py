@@ -4,7 +4,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
-@app.route("/")
+@app.route("/lambda/deploy/")
 def welcome():
     return render_template("upload.html")
 
@@ -26,5 +26,5 @@ def upload():
     return render_template("success.html")
 
 if __name__ == "__main__":
-    app.run(port=5000,debug=True)
+    app.run(port=5001,debug=True)
 

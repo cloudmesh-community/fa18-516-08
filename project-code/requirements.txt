@@ -1,0 +1,6 @@
+flask
+connexion
+config
+boto3
+botocore
+zipfile
