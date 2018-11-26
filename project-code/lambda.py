@@ -44,9 +44,14 @@ if __name__ == "__main__":
 
 # Function to create AWS Lambda Function:
 
-def create_aws_lambda(fname,renv,pkg,handler,func_name):
+def create_aws_lambda(fname):
+    ret = request.get_json()
+    renv = ret['renv']
+    pkg = ret['pkg']
+    handler = ret['handler']
+    cfile = ret['cfile']
     pkg = os.path.join(config.HOST.TGT_DIR, pkg)
-    py_file = os.path.splitext(func_name)[0]
+    py_file = os.path.splitext(cfile)[0]
 
     Handler = py_file + "." + handler
     print(Handler)
@@ -88,6 +93,14 @@ def del_aws_lambda(fname):
             return "{Error: Unexpected Error}"
 if __name__ == "__main__":
     print(del_aws_lambda('hello'))
+
+# Function to update  AWS Lambda Function:
+
+def upd_aws_lambda(fname):
+    ret = request.get_json()
+    return ret['renv']
+
+
 
 # Function to Upload deployment package for creating Lambda Function
 

@@ -66,7 +66,7 @@ paths:
         required: True
       responses:
         "200":
-          description: "Function name to search"
+          description: "Function Search"
           schema:
             $ref: "#/definitions/Lambda"
 
@@ -81,34 +81,39 @@ paths:
       - "application/json"
       parameters:
       - name: fname
-        description: Function name to create
+        description: Name for the AWS Lambda Function which will be created
         in: path
         type: string
         required: True
-      - name: renv
-        description: Runtime environment for AWS Lambda Function.Accepted Values are('nodejs','nodejs4.3','nodejs6.10','nodejs8.10','java8','python2.7','python3.6','python3.7','dotnetcore1.0','dotnetcore2.0','dotnetcore2.1','nodejs4.3-edge','go1.x')
-        in: query
-        type: string
-        required: True
-      - name: pkg
-        description: Zip file name of the deployment package for Lambda Function to create
-        in: query
-        type: string
-        required: True
-      - name: handler
-        description: Lambda Function Handler
-        in: query
-        type: string
-        required: True
-      - name: func_name
-        description: Python file name with Lambda function
-        in: query
-        type: string
-        required: True
+      - name: fprop
+        description: Required parameters to create AWS Lambda Function -Name of the file containing Lambda code (cfile),Runtime env (renv), AWS Lambda handler name (handler), zip file name of the AWS Lambda Deployment package(pkg)
+        in: body
+        schema:
+          type: object
+          required:
+          - renv
+          - handler
+          - cfile
+          - pkg
+          properties:
+            renv:
+              type: string
+              description: Runtime env for AWS Lambda Function
+            handler:
+              type: string
+            cfile:
+              type: string
+            pkg:
+              type: string
+          example:
+            renv: python3.7
+            handler: lambda_handler
+            cfile: hello.py
+            pkg: hello.zip
 
       responses:
         "200":
-          description: "Function name to create"
+          description: "Function Created"
           schema:
             $ref: "#/definitions/Lambda"
 
@@ -124,7 +129,7 @@ paths:
           required: True
         responses:
           "200":
-            description: "Function name to delete"
+            description: "Function Deleted"
             schema:
               $ref: "#/definitions/Lambda"
 definitions:

@@ -1,8 +1,8 @@
 import os
 
 class AWS:
-    AWS_ACCESS_KEY_ID = 'XXXXXXXXXX'
-    AWS_SECRET_ACCESS_KEY = 'XXXXXXXXX'
+    AWS_ACCESS_KEY_ID = 'XXXXXXXXX'
+    AWS_SECRET_ACCESS_KEY = 'XXXXXXX'
     AWS_S3_BUCKET_NAME ='XXXXXXXX'
     AWS_DEFAULT_REGION='us-east-2'
 
@@ -20,4 +20,4 @@ class AWS_POLICY:
     policy = {"Version":"2012-10-17","Statement":[{"Sid": "","Effect":"Allow","Principal":{"Service":"lambda.amazonaws.com"},"Action":["sts:AssumeRole"]}]}
 
 
-    ############## END OF BASIC POLICY #################################ßß
+    ############## END OF BASIC POLICY #################################
