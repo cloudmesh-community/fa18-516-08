@@ -16,6 +16,8 @@ wget -N https://raw.githubusercontent.com/cloudmesh-community/fa18-516-08/master
 cd templates
 wget -N https://raw.githubusercontent.com/cloudmesh-community/fa18-516-08/master/project-code/templates/lambda.html
 wget -N https://raw.githubusercontent.com/cloudmesh-community/fa18-516-08/master/project-code/templates/upload.html
+cd ../test
+wget -N https://raw.githubusercontent.com/cloudmesh-community/fa18-516-08/master/project-code/test/fun.json
 cd ../
 
 ##### install requirements.txt #####
