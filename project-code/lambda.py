@@ -14,12 +14,13 @@ AWS_DEFAULT_REGION = cfg['AWS']['AWS_DEFAULT_REGION']
 AWS_SECRET_ACCESS_KEY = cfg['AWS']['AWS_SECRET_ACCESS_KEY']
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 TGT_DIR = os.path.join(ROOT_DIR,'test/')
+# ------------------------------------------------------------#
 
 # Setup boto3 client (AWS SDK) for lambda
 client = boto3.client('lambda', aws_access_key_id= AWS_ACCESS_KEY_ID,
                               aws_secret_access_key=AWS_SECRET_ACCESS_KEY, region_name=AWS_DEFAULT_REGION)
 
-
+# ----------------------------------------------------------------------------------------------------------#
 
 # Function to list all available AWS Lambda functions for a user account in a region
 
@@ -27,9 +28,6 @@ def list_aws_lambda():
     response = client.list_functions()
     fname = response['Functions']
     return fname
-
-
-
 
 # Function to list AWS Lambda function by name:
 
@@ -44,8 +42,6 @@ def get_aws_lambda_by_name(fname):
             return e
         else:
             return "{Error: Unexpected Error}"
-
-
 
 # Function to create AWS Lambda Function:
 
@@ -77,9 +73,6 @@ def create_aws_lambda(fname):
             # return "{Error: Unexpected Error}"
             return err
 
-
-
-
 # Function to delete AWS Lambda Function:
 
 def del_aws_lambda(fname):
@@ -95,7 +88,6 @@ def del_aws_lambda(fname):
         else:
             return "{Error: Unexpected Error}"
 
-
 # Function to update  AWS Lambda Function:
 
 def upd_aws_lambda(fname):
@@ -104,8 +96,6 @@ def upd_aws_lambda(fname):
     proplist = ['Description','Handler','MemorySize','Runtime','Role','Timeout']
     propdict= {k: ret[k] for k in proplist if k in ret}
     return propdict
-
-
 
 # Function to Upload deployment package for creating Lambda Function
 
