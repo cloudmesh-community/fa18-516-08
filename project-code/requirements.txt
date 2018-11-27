@@ -3,4 +3,5 @@ connexion
 config
 boto3
 botocore
+connexion[swagger-ui]
 

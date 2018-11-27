@@ -9,7 +9,7 @@ class AWS:
 class HOST:
     HOSTNAME = ''
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-    TGT_DIR = os.path.join(ROOT_DIR,'LambdaDeployment/')
+    TGT_DIR = os.path.join(ROOT_DIR,'test/')
 class Runenv:
     runenv = ['nodejs','nodejs4.3','nodejs6.10','nodejs8.10','java8','python2.7','python3.6','python3.7','dotnetcore1.0','dotnetcore2.0','dotnetcore2.1','nodejs4.3-edge','go1.x']
 

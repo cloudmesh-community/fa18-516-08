@@ -10,7 +10,7 @@ def welcome():
 
 @app.route("/upload", methods =["POST"])
 def upload():
-    target_path = os.path.join(ROOT_PATH,'LambdaDeployment/')
+    target_path = os.path.join(ROOT_PATH,'test/')
     print(target_path)
     if not os.path.isdir(target_path):
         os.mkdir(target_path)
