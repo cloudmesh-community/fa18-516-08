@@ -1,2 +1,2 @@
 cd /opt/cloudmesh/
-sudo rm -rf VarunJoshi
+sudo rm -rf fa18-516-08
