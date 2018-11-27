@@ -16,15 +16,16 @@ wget -N https://raw.githubusercontent.com/cloudmesh-community/fa18-516-08/master
 cd templates
 wget -N https://raw.githubusercontent.com/cloudmesh-community/fa18-516-08/master/project-code/templates/lambda.html
 wget -N https://raw.githubusercontent.com/cloudmesh-community/fa18-516-08/master/project-code/templates/upload.html
-cd ../test
-wget -N https://raw.githubusercontent.com/cloudmesh-community/fa18-516-08/master/project-code/test/fun.json
 cd ../
+
 
 ##### install requirements.txt #####
 sudo pip3 install -r requirements.txt
 ##### deployment package upload #####
 cd test
 wget -N https://github.com/cloudmesh-community/fa18-516-08/raw/master/project-code/test/hello.zip
+wget -N https://raw.githubusercontent.com/cloudmesh-community/fa18-516-08/master/project-code/test/fun.json
+
 cd ../
 
 
