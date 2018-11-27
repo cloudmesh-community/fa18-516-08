@@ -1,0 +1,6 @@
+{
+  "cfile": "hello.py",
+  "handler": "lambda_handler",
+  "pkg": "hello.zip",
+  "renv": "python3.7"
+}
