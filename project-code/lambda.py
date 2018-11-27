@@ -1,15 +1,25 @@
 #import all packages
 import boto3
-import config
 import yaml
 import os
 from flask import request
 from botocore.exceptions import ClientError
 from create_lambda_basic_exec_role import get_role
 
+# Load YAML config file
+with open("config.yaml", 'r') as f:
+    cfg = yaml.load(f)
+AWS_ACCESS_KEY_ID = cfg['AWS']['AWS_ACCESS_KEY_ID']
+AWS_DEFAULT_REGION = cfg['AWS']['AWS_DEFAULT_REGION']
+AWS_SECRET_ACCESS_KEY = cfg['AWS']['AWS_SECRET_ACCESS_KEY']
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+TGT_DIR = os.path.join(ROOT_DIR,'test/')
 
-client = boto3.client('lambda', aws_access_key_id= config.AWS.AWS_ACCESS_KEY_ID,
-                              aws_secret_access_key=config.AWS.AWS_SECRET_ACCESS_KEY, region_name=config.AWS.AWS_DEFAULT_REGION)
+# Setup boto3 client (AWS SDK) for lambda
+client = boto3.client('lambda', aws_access_key_id= AWS_ACCESS_KEY_ID,
+                              aws_secret_access_key=AWS_SECRET_ACCESS_KEY, region_name=AWS_DEFAULT_REGION)
+
+
 
 # Function to list all available AWS Lambda functions for a user account in a region
 
@@ -45,7 +55,7 @@ def create_aws_lambda(fname):
     pkg = ret['pkg']
     handler = ret['handler']
     cfile = ret['cfile']
-    pkg = os.path.join(config.HOST.TGT_DIR, pkg)
+    pkg = os.path.join(TGT_DIR, pkg)
     py_file = os.path.splitext(cfile)[0]
 
     Handler = py_file + "." + handler
@@ -100,7 +110,7 @@ def upd_aws_lambda(fname):
 # Function to Upload deployment package for creating Lambda Function
 
 def upload():
-    target_path = config.HOST.TGT_DIR
+    target_path = TGT_DIR
     print(target_path)
     if not os.path.isdir(target_path):
         os.mkdir(target_path)
