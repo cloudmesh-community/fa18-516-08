@@ -30,6 +30,9 @@ The goal of this project is to build a solution utilizing REST APIs to manage AW
 
 The project is build of three components (see +@fig:Architecture).
 
+![arch.jpg](assets/markdown-img-paste-20181128130818578.png)
+{#fig:Architecture}
+
 * Swagger 2.0 is used for writing API specification.The specification describes endpoints for AWS Lambda CRUD operations and defines operation for each endpoint.
 * Python flask framework consumes the OpenAPI specification and directs the endpoints to Python functions by building a RESTful app.
 * AWS SDK for Python (boto3) is used to define Python functions which operate on endpoints and expose the resource, which is AWS Lambda , over REST API.
@@ -37,6 +40,9 @@ The project is build of three components (see +@fig:Architecture).
 ## Implementation
 
 Refer to the architecture (see +@fig:Architecture). I have enhanced the figure to include implementation details (see +@fig:Implementation).
+
+![arch1.jpg](assets/markdown-img-paste-20181128130934676.png)
+{#fig:Implementation}
 
 * **OpenAPI specification (Swagger 2.0)** :
   - **/project-code/lambda.yaml** : Defines the endpoints for CRUD operations on AWS lambda
