@@ -30,7 +30,7 @@ The goal of this project is to build a solution utilizing REST APIs to manage AW
 
 The project is build of three components (see +@fig:Architecture).
 
-![arch.jpg](assets/markdown-img-paste-20181128130818578.png)
+![arch.jpg](images/arch.jpg)
 {#fig:Architecture}
 
 * Swagger 2.0 is used for writing API specification.The specification describes endpoints for AWS Lambda CRUD operations and defines operation for each endpoint.
@@ -41,7 +41,7 @@ The project is build of three components (see +@fig:Architecture).
 
 Refer to the architecture (see +@fig:Architecture). I have enhanced the figure to include implementation details (see +@fig:Implementation).
 
-![arch1.jpg](assets/markdown-img-paste-20181128130934676.png)
+![arch1.jpg](images/arch1.jpg)
 {#fig:Implementation}
 
 * **OpenAPI specification (Swagger 2.0)** :
