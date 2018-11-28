@@ -36,7 +36,81 @@ The project is build of three components (see +@fig:Architecture).
 
 ## Implementation
 
-## Results
+Refer to the architecture (see +@fig:Architecture). I have enhanced the figure to include implementation details (see +@fig:Implementation).
+
+* **OpenAPI specification (Swagger 2.0)** :
+  - **/project-code/lambda.yaml** : Defines the endpoints for CRUD operations on AWS lambda
+* **Python flask framework** :
+  - **/project-code/lambda_app.py** : Creates a connexion app which uses Flask under the hood. Consumes OpenAPI specification (Swagger 2.0) file lambda.yaml and routes the endpoints defined in the specification to the respective Python functions.The app is exposed as REST API running on local host and port 8080.
+* **Python program for building endpoints** :
+  - **/project-code/lambda.py** : Defines multiple Python functions utilizing boto3 which is AWS SDK for Python. Each function builds the endpoints to support REST operations.
+* **Other files** :
+  - **/project-code/create_lambda_basic_exec_role.py** : This Python program generates a basic AWS Lambda execution role which is attached to the newly created AWS Lambda function. To create an AWS Lambda function with an enhanced role such as accessing, the policy attribute in the program can be changed to the desired policy.
+  - **/project-code/config.yaml** : This is a Python configuration file in YAML format. It holds reusable variables used across the Python programs in this project.
+  - **/project-code/requirements.txt** : File with Python package and libraries dependency to be installed using pip command.
+  - **/project-code/test/hello.zip** : Sample AWS Lambda deployment package zip file which holds a Python program for building simple AWS Lambda Function as a Service.
+  - **/project-code/test/fun.json** : Body parameters for REST POST operation for creating AWS Lambda.
+  - **/project-code/shell**:
+    - setup.sh : sets the project environment by cloning this GIT repository
+    - runAPI.sh : Runs the /project-code/lambda_app.py to start REST service
+    - testAPI.sh : basic GET/POST/DELETE curl commands to test REST service for managing AWS Lambda
+    - clean.sh : Deletes the project environment
+
+## Testing and Results
+
+In the /project-code directory, run the Python program lambda_app.py:
+python lambda_app.py
+
+REST service will start on port 8080 (see +@fig:start REST)
+
+Screen Shot 2018-11-27 at 8.39.56 PM {#fig:start REST}
+
+Once the REST service has started , bring up the Swagger UI (see +@fig: Swagger UI).curl can also be used in the command line to test the REST service)
+
+Type http://0.0.0.0:8080/lambda/ui/ on a web browser to open Swagger UI:
+
+Screen Shot 2018-11-27 at 8.49.04 PM {#fig:Swagger UI}
+
+For the LAMBDA tag in the Swagger UI, click "List Operations". All available REST operations for AWS Lambda resource will be displayed (see +@fig:Lambda).
+
+Screen Shot 2018-11-27 at 8.53.49 PM {#fig:Lambda}
+
+Test each operation:
+* GET all AWS Lambda functions:
+  Click on GET /function in the Swagger UI and then click "Try it out!" (see +@fig:GET functions).
+
+  Screen Shot 2018-11-27 at 8.59.07 PM {#fig:GET functions}
+
+  Result for GET functions (see +@fig:GET functions result).
+
+  Screen Shot 2018-11-27 at 9.04.19 PM (#fig: GET functions result)
+
+* GET function by name:
+  Click on GET /function/{fname} in the Swagger UI and then type the function name to get and click "Try it out!" (see +@fig: Get function by name).
+
+  Screen Shot 2018-11-27 at 9.10.32 PM (#fig:Get function by name)
+
+  Result for GET function by name (see +@fig:Get function result).
+
+  Screen Shot 2018-11-27 at 9.12.42 PM {#fig:Get function result}
+
+* POST a new function:
+  Expand POST /function/{fname} , type in the new AWS Lambda function name to create and in the body parameter type in the json format for the required values or click the json under "Example Value" to auto pouplate the json in the body parameter. Click "Try it out!" (see +@fig:POST function).
+
+  Screen Shot 2018-11-27 at 9.19.27 PM {#fig:POST function}
+
+  Result for POST function (see +@fig:POST Result).
+
+  Screen Shot 2018-11-27 at 9.21.26 PM {#fig:POST Result}
+
+* Delete a function:
+  Expand DELETE /function/{fname} in the Swagger UI. Type in the function name to delete and then click "Try it out!" (see +@fig:DELETE function).
+
+  Screen Shot 2018-11-27 at 9.26.20 PM {#fig: DELETE function}
+
+  Result for DELETE function (see +@fig:DELETE result).
+
+  Screen Shot 2018-11-27 at 9.27.09 PM {#fig:DELETE result}
 
 ## Steps To Reproduce
 
