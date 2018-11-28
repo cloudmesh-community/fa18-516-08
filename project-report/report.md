@@ -113,18 +113,18 @@ Result for GET functions (see +@fig:GET functions result).
 
 
 * **GET function by name**:
-Click on GET /function/{fname} in the Swagger UI and then type the function name to get and click "Try it out!" (see +@fig: Get function by name).
+Click on GET /function/{fname} in the Swagger UI and then type the function name to get and click "Try it out!" (see +@fig: GET function by name).
 
 
 ![Screen Shot 2018-11-27 at 9.10.32 PM](images/markdown-img-paste-20181127220552531.png)
-{#fig:Get function by name}
+{#fig:GET function by name}
 
 
-Result for GET function by name (see +@fig:Get function result).
+Result for GET function by name (see +@fig:GET function result).
 
 
 ![Screen Shot 2018-11-27 at 9.12.42 PM](images/markdown-img-paste-20181127220611728.png)
-{#fig:Get function result}
+{#fig:GET function result}
 
 
 * **POST a new function**:
@@ -159,7 +159,7 @@ Result for DELETE function (see +@fig:DELETE result).
 ## Steps To Reproduce
 
 To reproduce the project environment in any Ubuntu machine, use the
-**/project-code/shell/setup.sh**  and then to start REST use **/project-code/shell/runAPI.sh**
+**/project-code/shell/setup.sh**  and then to start REST service use **/project-code/shell/runAPI.sh**
 
 curl commands to test REST are provided in **/project-code/shell/testAPI.sh**
 
