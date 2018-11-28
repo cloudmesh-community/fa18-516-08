@@ -63,17 +63,23 @@ python lambda_app.py
 
 REST service will start on port 8080 (see +@fig:start REST)
 
-Screen Shot 2018-11-27 at 8.39.56 PM {#fig:start REST}
+Screen Shot 2018-11-27 at 8.39.56 PM
+
+{#fig:start REST}
 
 Once the REST service has started , bring up the Swagger UI (see +@fig: Swagger UI).curl can also be used in the command line to test the REST service)
 
 Type http://0.0.0.0:8080/lambda/ui/ on a web browser to open Swagger UI:
 
-Screen Shot 2018-11-27 at 8.49.04 PM {#fig:Swagger UI}
+Screen Shot 2018-11-27 at 8.49.04 PM
+
+{#fig:Swagger UI}
 
 For the LAMBDA tag in the Swagger UI, click "List Operations". All available REST operations for AWS Lambda resource will be displayed (see +@fig:Lambda).
 
-Screen Shot 2018-11-27 at 8.53.49 PM {#fig:Lambda}
+Screen Shot 2018-11-27 at 8.52.58 PM
+
+{#fig:Lambda}
 
 Test each operation:
 * GET all AWS Lambda functions:
