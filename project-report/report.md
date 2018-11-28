@@ -64,7 +64,7 @@ python lambda_app.py
 REST service will start on port 8080 (see +@fig:start REST)
 
 
-![Screen Shot 2018-11-27 at 8.39.56 PM](assets/markdown-img-paste-20181127220402146.png)
+![Screen Shot 2018-11-27 at 8.39.56 PM](images/markdown-img-paste-20181127220402146.png)
 {#fig:start REST}
 
 
@@ -73,14 +73,14 @@ Once the REST service has started , bring up the Swagger UI (see +@fig: Swagger 
 Type http://0.0.0.0:8080/lambda/ui/ on a web browser to open Swagger UI:
 
 
-![Screen Shot 2018-11-27 at 8.49.04 PM](assets/markdown-img-paste-20181127220427423.png)
+![Screen Shot 2018-11-27 at 8.49.04 PM](images/markdown-img-paste-20181127220427423.png)
 {#fig:Swagger UI}
 
 
 For the LAMBDA tag in the Swagger UI, click "List Operations". All available REST operations for AWS Lambda resource will be displayed (see +@fig:Lambda).
 
 
-![Screen Shot 2018-11-27 at 8.53.49 PM](assets/markdown-img-paste-20181127220450694.png)
+![Screen Shot 2018-11-27 at 8.53.49 PM](images/markdown-img-paste-20181127220450694.png)
 {#fig:Lambda}
 
 
@@ -89,14 +89,14 @@ Test each operation:
   Click on GET /function in the Swagger UI and then click "Try it out!" (see +@fig:GET functions).
 
 
-![Screen Shot 2018-11-27 at 8.59.07 PM](assets/markdown-img-paste-20181127220513909.png)
+![Screen Shot 2018-11-27 at 8.59.07 PM](images/markdown-img-paste-20181127220513909.png)
   {#fig:GET functions}
 
 
   Result for GET functions (see +@fig:GET functions result).
 
 
-![Screen Shot 2018-11-27 at 9.04.19 PM](assets/markdown-img-paste-20181127220534175.png)
+![Screen Shot 2018-11-27 at 9.04.19 PM](images/markdown-img-paste-20181127220534175.png)
   {#fig: GET functions result}
 
 
@@ -104,14 +104,14 @@ Test each operation:
   Click on GET /function/{fname} in the Swagger UI and then type the function name to get and click "Try it out!" (see +@fig: Get function by name).
 
 
-  ![Screen Shot 2018-11-27 at 9.10.32 PM](assets/markdown-img-paste-20181127220552531.png)
+  ![Screen Shot 2018-11-27 at 9.10.32 PM](images/markdown-img-paste-20181127220552531.png)
   {#fig:Get function by name}
 
 
   Result for GET function by name (see +@fig:Get function result).
 
 
-![Screen Shot 2018-11-27 at 9.12.42 PM](assets/markdown-img-paste-20181127220611728.png)
+![Screen Shot 2018-11-27 at 9.12.42 PM](images/markdown-img-paste-20181127220611728.png)
   {#fig:Get function result}
 
 
@@ -119,14 +119,14 @@ Test each operation:
   Expand POST /function/{fname} , type in the new AWS Lambda function name to create and in the body parameter type in the json format for the required values or click the json under "Example Value" to auto pouplate the json in the body parameter. Click "Try it out!" (see +@fig:POST function).
 
 
-![Screen Shot 2018-11-27 at 9.19.27 PM](assets/markdown-img-paste-20181127220628598.png)
+![Screen Shot 2018-11-27 at 9.19.27 PM](images/markdown-img-paste-20181127220628598.png)
   {#fig:POST function}
 
 
   Result for POST function (see +@fig:POST Result).
 
 
-![Screen Shot 2018-11-27 at 9.21.26 PM](assets/markdown-img-paste-20181127220650461.png)
+![Screen Shot 2018-11-27 at 9.21.26 PM](images/markdown-img-paste-20181127220650461.png)
   {#fig:POST Result}
 
 
@@ -134,14 +134,14 @@ Test each operation:
   Expand DELETE /function/{fname} in the Swagger UI. Type in the function name to delete and then click "Try it out!" (see +@fig:DELETE function).
 
 
-  ![Screen Shot 2018-11-27 at 9.26.20 PM](assets/markdown-img-paste-20181127220713847.png)
+  ![Screen Shot 2018-11-27 at 9.26.20 PM](images/markdown-img-paste-20181127220713847.png)
   {#fig: DELETE function}
 
 
   Result for DELETE function (see +@fig:DELETE result).
 
 
-![Screen Shot 2018-11-27 at 9.27.09 PM](assets/markdown-img-paste-20181127220728802.png)
+![Screen Shot 2018-11-27 at 9.27.09 PM](images/markdown-img-paste-20181127220728802.png)
   {#fig:DELETE result}
 
 ## Steps To Reproduce
