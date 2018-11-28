@@ -85,7 +85,7 @@ For the LAMBDA tag in the Swagger UI, click "List Operations". All available RES
 
 
 Test each operation:
-* GET all AWS Lambda functions:
+* **GET all AWS Lambda functions**:
   Click on GET /function in the Swagger UI and then click "Try it out!" (see +@fig:GET functions).
 
 
@@ -100,7 +100,7 @@ Test each operation:
   {#fig: GET functions result}
 
 
-* GET function by name:
+* **GET function by name**:
   Click on GET /function/{fname} in the Swagger UI and then type the function name to get and click "Try it out!" (see +@fig: Get function by name).
 
 
@@ -115,7 +115,7 @@ Test each operation:
   {#fig:Get function result}
 
 
-* POST a new function:
+* **POST a new function**:
   Expand POST /function/{fname} , type in the new AWS Lambda function name to create and in the body parameter type in the json format for the required values or click the json under "Example Value" to auto pouplate the json in the body parameter. Click "Try it out!" (see +@fig:POST function).
 
 
@@ -130,7 +130,7 @@ Test each operation:
   {#fig:POST Result}
 
 
-* Delete a function:
+* **Delete a function**:
   Expand DELETE /function/{fname} in the Swagger UI. Type in the function name to delete and then click "Try it out!" (see +@fig:DELETE function).
 
 
@@ -145,6 +145,15 @@ Test each operation:
   {#fig:DELETE result}
 
 ## Steps To Reproduce
+
+To reproduce the project environment in any Ubuntu machine, use the
+**/project-code/shell/setup.sh**  and then to start REST use **/project-code/shell/runAPI.sh**
+
+curl commands to test REST are provided in **/project-code/shell/testAPI.sh**
+
+## Technologies Used
+
+
 
 ## Conclusion
 
