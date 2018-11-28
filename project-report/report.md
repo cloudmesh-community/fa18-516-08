@@ -98,63 +98,63 @@ For the LAMBDA tag in the Swagger UI, click "List Operations". All available RES
 
 Test each operation:
 * **GET all AWS Lambda functions**:
-  Click on GET /function in the Swagger UI and then click "Try it out!" (see +@fig:GET functions).
+Click on GET /function in the Swagger UI and then click "Try it out!" (see +@fig:GET functions).
 
 
 ![Screen Shot 2018-11-27 at 8.59.07 PM](images/markdown-img-paste-20181127220513909.png)
-  {#fig:GET functions}
+{#fig:GET functions}
 
 
-  Result for GET functions (see +@fig:GET functions result).
+Result for GET functions (see +@fig:GET functions result).
 
 
 ![Screen Shot 2018-11-27 at 9.04.19 PM](images/markdown-img-paste-20181127220534175.png)
-  {#fig: GET functions result}
+{#fig: GET functions result}
 
 
 * **GET function by name**:
-  Click on GET /function/{fname} in the Swagger UI and then type the function name to get and click "Try it out!" (see +@fig: Get function by name).
+Click on GET /function/{fname} in the Swagger UI and then type the function name to get and click "Try it out!" (see +@fig: Get function by name).
 
 
-  ![Screen Shot 2018-11-27 at 9.10.32 PM](images/markdown-img-paste-20181127220552531.png)
-  {#fig:Get function by name}
+![Screen Shot 2018-11-27 at 9.10.32 PM](images/markdown-img-paste-20181127220552531.png)
+{#fig:Get function by name}
 
 
-  Result for GET function by name (see +@fig:Get function result).
+Result for GET function by name (see +@fig:Get function result).
 
 
 ![Screen Shot 2018-11-27 at 9.12.42 PM](images/markdown-img-paste-20181127220611728.png)
-  {#fig:Get function result}
+{#fig:Get function result}
 
 
 * **POST a new function**:
-  Expand POST /function/{fname} , type in the new AWS Lambda function name to create and in the body parameter type in the json format for the required values or click the json under "Example Value" to auto pouplate the json in the body parameter. Click "Try it out!" (see +@fig:POST function).
+Expand POST /function/{fname} , type in the new AWS Lambda function name to create and in the body parameter type in the json format for the required values or click the json under "Example Value" to auto pouplate the json in the body parameter. Click "Try it out!" (see +@fig:POST function).
 
 
 ![Screen Shot 2018-11-27 at 9.19.27 PM](images/markdown-img-paste-20181127220628598.png)
-  {#fig:POST function}
+{#fig:POST function}
 
 
-  Result for POST function (see +@fig:POST Result).
+Result for POST function (see +@fig:POST Result).
 
 
 ![Screen Shot 2018-11-27 at 9.21.26 PM](images/markdown-img-paste-20181127220650461.png)
-  {#fig:POST Result}
+{#fig:POST Result}
 
 
 * **Delete a function**:
-  Expand DELETE /function/{fname} in the Swagger UI. Type in the function name to delete and then click "Try it out!" (see +@fig:DELETE function).
+Expand DELETE /function/{fname} in the Swagger UI. Type in the function name to delete and then click "Try it out!" (see +@fig:DELETE function).
 
 
-  ![Screen Shot 2018-11-27 at 9.26.20 PM](images/markdown-img-paste-20181127220713847.png)
-  {#fig: DELETE function}
+![Screen Shot 2018-11-27 at 9.26.20 PM](images/markdown-img-paste-20181127220713847.png)
+{#fig: DELETE function}
 
 
-  Result for DELETE function (see +@fig:DELETE result).
+Result for DELETE function (see +@fig:DELETE result).
 
 
 ![Screen Shot 2018-11-27 at 9.27.09 PM](images/markdown-img-paste-20181127220728802.png)
-  {#fig:DELETE result}
+{#fig:DELETE result}
 
 ## Steps To Reproduce
 
