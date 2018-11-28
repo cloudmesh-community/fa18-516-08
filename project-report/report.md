@@ -57,10 +57,10 @@ Refer to the architecture (see +@fig:Architecture). I have enhanced the figure t
         "renv": "python3.7"
         }
     The key values are required and are explained as below:
-    **"cfile"** : The  name of the code file for the application which is used by AWS Lambda for processing the functionality of the application. This project uses simple Hello World Python program as the code file.
-    **"handler"** : Name of the handler or function inside the code file which is invoked by AWS Lambda. In this project lambda_handler is the name of the Python function inside the code file hello.py.
-    **"pkg"** : The name of the zip file which has code file as well as all dependencies required for the code file. In this project this zip file is physically present in the directory /project-code/test.
-    **"renv"** : Runtime environment in AWS Lambda for the code file. This project uses Python 3.7 runtime environment provided by AWS Lambda.
+      - **"cfile"** : The  name of the code file for the application which is used by AWS Lambda for processing the functionality of the application. This project uses simple Hello World Python program as the code file.
+      - **"handler"** : Name of the handler or function inside the code file which is invoked by AWS Lambda. In this project lambda_handler is the name of the Python function inside the code file hello.py.
+      - **"pkg"** : The name of the zip file which has code file as well as all dependencies required for the code file. In this project this zip file is physically present in the directory /project-code/test.
+      - **"renv"** : Runtime environment in AWS Lambda for the code file. This project uses Python 3.7 runtime environment provided by AWS Lambda.
 
   - **/project-code/shell**:
     - setup.sh : sets the project environment by cloning this GIT repository
