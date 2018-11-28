@@ -165,15 +165,15 @@ curl commands to test REST are provided in **/project-code/shell/testAPI.sh**
 
 ## Technologies Used
 
-**OS** : ubuntu 18.04
+* **OS** : ubuntu 18.04
   - For project runtime environment and to host REST service.
-**Programming Language** : Python 3.7
+* **Programming Language** : Python 3.7
   - For building REST service using Flask framework with connexion
   - Building functions for REST endpoints
-**Cloud Provider** : Amazon Web services
+* **Cloud Provider** : Amazon Web services
   - For exposing AWS Lambda, Amazon's FaaS offering , as REST endpoint for CRUD
   - boto3 - AWS SDK for Python
-**API Specification** : OpenAPI
+* **API Specification** : OpenAPI
   - Swagger 2.0 specification for building REST API
   - Swagger UI editor for testing REST operations
 
