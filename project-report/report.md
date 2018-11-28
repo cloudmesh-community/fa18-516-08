@@ -3,42 +3,42 @@
 | Varun Joshi | vajoshi@iu.edu | Indiana University | hid: fa18-516-08 | github:
 [:cloud:](https://github.com/cloudmesh-community/fa18-516-08/blob/master/project-paper/report.md)
 
+**:mortar_board: Learning Objectives**
+
+* Understand RESTful APIs and explore basic CRUD operations
+* Apply REST understanding to Amazon's FaaS offering - AWS Lambda
+* Learn AWS SDK for Python - boto3
+* Use boto3 and Python Flask framework for building RESTful API with AWS Lambda as the resource
+
 ---
 
-Keywords: FaaS, Lambda, search, text search, REST,OpenAPI example
+Keywords: FaaS, AWS Lambda,serverless,REST,OpenAPI example,Swagger
 
 ---
+
 
 ## Abstract
 
-Amazon's Function as Service offering, AWS Lambda, provides serverless computing and eliminates the overhead of provisioning and managing servers. Lambda scales automatically for performing high demanding compute tasks.
-AWS Lambda can also integrate with other AWS services like S3 and Dynamo DB, extending it's capabilities for building high scale applications. Once such application could be a text search utility which searches for a specific user provided text  in a user provided file which is stored as an object in Amazon S3. The aim of this project is to build a text search utility application and provide users a simple REST service to view the search results.
+Amazon's Function as Service offering, AWS Lambda, provides serverless computing and eliminates the overhead of provisioning and managing servers.
+AWS Lambda can also integrate with other AWS services like S3 and Dynamo DB, extending it's capabilities for building highly scalable applications. AWS Lambda can be triggered by other AWS resource events, HTTP endpoints, mobile applications etc. giving the flexibility for serverless computing. This project explores managing AWS Lambda by providing a solution for basic CRUD operations through REST API build using OpenAPI (Swagger 2.0) specification.
 
 ## Introduction
 
-The goal of this project is to build a search utility by invoking AWS Lambda function which reads a file object in Amazon S3 and directs the search results to a REST webservice. The project attempts to showcase the AWS Lambda, FaaS and REST learning and implementation for building a text search utility.
-
-## Design
-
-1. Setup AWS free tier account
-2. Launch an EC2 instance
-3. Install required tools for generating Swagger server side stub for building REST API
-4. Import all Python packages required on EC2 - boto3 for invoking AWS Lambda Function
-5. Create AWS S3 bucket and configure required permissions. Upload a test file required for demonstrating the project implementation.
-6. Create IAM role for allowing Lambda to access S3
-6. Create AWS Lambda function
-7. Host REST API on EC2
-8. Test the utility
-9. Automate all tasks performed on AWS console
-
+The goal of this project is to build a solution utilizing REST APIs to manage AWS Lambda service. The solution focuses on providing basic REST CRUD operations with AWS Lambda as resource. Python and Python flask framework is used for constructing REST service and AWS SDK for Python (boto3) is used for managing AWS Lambda.
 
 ## Architecture
 
-## Dataset
+The project is build of three components (see +@fig:Architecture).
+
+* Swagger 2.0 is used for writing API specification.The specification describes endpoints for AWS Lambda CRUD operations and defines operation for each endpoint.
+* Python flask framework consumes the OpenAPI specification and directs the endpoints to Python functions by building a RESTful app.
+* AWS SDK for Python (boto3) is used to define Python functions which operate on endpoints and expose the resource, which is AWS Lambda , over REST API.
 
 ## Implementation
 
-## Benchmark
+## Results
+
+## Steps To Reproduce
 
 ## Conclusion
 
