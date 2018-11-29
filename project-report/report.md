@@ -1,9 +1,9 @@
 # Managing AWS Lambda Using REST API :hand:fa18-516-08
 
-| Varun Joshi 
-| vajoshi@iu.edu 
-| Indiana University 
-| hid: fa18-516-08 
+| Varun Joshi
+| vajoshi@iu.edu
+| Indiana University
+| hid: fa18-516-08
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-08/blob/master/project-report/report.md)
 
 **:mortar_board: Learning Objectives**
@@ -86,7 +86,7 @@ REST service will start on port 8080 (see +@fig:start REST)
 ![Screen Shot 2018-11-27 at 8.39.56 PM](images/markdown-img-paste-20181127220402146.png){#fig:startREST}
 
 
-Once the REST service has started , bring up the Swagger UI (see +@fig: Swagger UI).curl can also be used in the command line to test the REST service)
+Once the REST service has started , bring up the Swagger UI (see +@fig: SwaggerUI).curl can also be used in the command line to test the REST service)
 
 Type http://0.0.0.0:8080/lambda/ui/ on a web browser to open Swagger UI:
 
@@ -102,52 +102,52 @@ For the LAMBDA tag in the Swagger UI, click "List Operations". All available RES
 
 Test each operation:
 * **GET all AWS Lambda functions**:
-Click on GET /function in the Swagger UI and then click "Try it out!" (see +@fig:GET functions).
+Click on GET /function in the Swagger UI and then click "Try it out!" (see +@fig:GETFunctions).
 
 
-![Screen Shot 2018-11-27 at 8.59.07 PM](images/markdown-img-paste-20181127220513909.png){#fig:GET functions}
+![Screen Shot 2018-11-27 at 8.59.07 PM](images/markdown-img-paste-20181127220513909.png){#fig:GETFunctions}
 
 
-Result for GET functions (see +@fig:GET functions result).
+Result for GET functions (see +@fig:GETFunctionsResult).
 
 
-![Screen Shot 2018-11-27 at 9.04.19 PM](images/markdown-img-paste-20181127220534175.png){#fig: GET functions result}
+![Screen Shot 2018-11-27 at 9.04.19 PM](images/markdown-img-paste-20181127220534175.png){#fig: GETFunctionsResult}
 
 
 * **GET function by name**:
-Click on GET /function/{fname} in the Swagger UI and then type the function name to get and click "Try it out!" (see +@fig: GET function by name).
+Click on GET /function/{fname} in the Swagger UI and then type the function name to get and click "Try it out!" (see +@fig: GETFunctionByName).
 
 
-![Screen Shot 2018-11-27 at 9.10.32 PM](images/markdown-img-paste-20181127220552531.png){#fig:GET function by name}
+![Screen Shot 2018-11-27 at 9.10.32 PM](images/markdown-img-paste-20181127220552531.png){#fig:GETFunctionByName}
 
 
-Result for GET function by name (see +@fig:GET function result).
+Result for GET function by name (see +@fig:GETfunctionresult).
 
 
 ![Screen Shot 2018-11-27 at 9.12.42 PM](images/markdown-img-paste-20181127220611728.png){#fig:GETfunctionresult}
 
 
 * **POST a new function**:
-Expand POST /function/{fname} , type in the new AWS Lambda function name to create and in the body parameter type in the json format for the required values or click the json under "Example Value" to auto pouplate the json in the body parameter. Click "Try it out!" (see +@fig:POST function).
+Expand POST /function/{fname} , type in the new AWS Lambda function name to create and in the body parameter type in the json format for the required values or click the json under "Example Value" to auto pouplate the json in the body parameter. Click "Try it out!" (see +@fig:POSTfunction).
 
 
 ![Screen Shot 2018-11-27 at 9.19.27 PM](images/markdown-img-paste-20181127220628598.png){#fig:POSTfunction}
 
 
-Result for POST function (see +@fig:POST Result).
+Result for POST function (see +@fig:POSTResult).
 
 
 ![Screen Shot 2018-11-27 at 9.21.26 PM](images/markdown-img-paste-20181127220650461.png){#fig:POSTResult}
 
 
 * **Delete a function**:
-Expand DELETE /function/{fname} in the Swagger UI. Type in the function name to delete and then click "Try it out!" (see +@fig:DELETE function).
+Expand DELETE /function/{fname} in the Swagger UI. Type in the function name to delete and then click "Try it out!" (see +@fig:DELETEfunction).
 
 
 ![Screen Shot 2018-11-27 at 9.26.20 PM](images/markdown-img-paste-20181127220713847.png){#fig:DELETEfunction}
 
 
-Result for DELETE function (see +@fig:DELETE result).
+Result for DELETE function (see +@fig:DELETEresult).
 
 
 ![Screen Shot 2018-11-27 at 9.27.09 PM](images/markdown-img-paste-20181127220728802.png){#fig:DELETEresult}
