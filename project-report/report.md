@@ -83,7 +83,7 @@ python lambda_app.py
 REST service will start on port 8080 (see +@fig:start REST)
 
 
-![Screen Shot 2018-11-27 at 8.39.56 PM](images/markdown-img-paste-20181127220402146.png){#fig:start REST}
+![Screen Shot 2018-11-27 at 8.39.56 PM](images/markdown-img-paste-20181127220402146.png){#fig:startREST}
 
 
 Once the REST service has started , bring up the Swagger UI (see +@fig: Swagger UI).curl can also be used in the command line to test the REST service)
@@ -91,7 +91,7 @@ Once the REST service has started , bring up the Swagger UI (see +@fig: Swagger 
 Type http://0.0.0.0:8080/lambda/ui/ on a web browser to open Swagger UI:
 
 
-![Screen Shot 2018-11-27 at 8.49.04 PM](images/markdown-img-paste-20181127220427423.png){#fig:Swagger UI}
+![Screen Shot 2018-11-27 at 8.49.04 PM](images/markdown-img-paste-20181127220427423.png){#fig:SwaggerUI}
 
 
 For the LAMBDA tag in the Swagger UI, click "List Operations". All available REST operations for AWS Lambda resource will be displayed (see +@fig:Lambda).
@@ -124,33 +124,33 @@ Click on GET /function/{fname} in the Swagger UI and then type the function name
 Result for GET function by name (see +@fig:GET function result).
 
 
-![Screen Shot 2018-11-27 at 9.12.42 PM](images/markdown-img-paste-20181127220611728.png){#fig:GET function result}
+![Screen Shot 2018-11-27 at 9.12.42 PM](images/markdown-img-paste-20181127220611728.png){#fig:GETfunctionresult}
 
 
 * **POST a new function**:
 Expand POST /function/{fname} , type in the new AWS Lambda function name to create and in the body parameter type in the json format for the required values or click the json under "Example Value" to auto pouplate the json in the body parameter. Click "Try it out!" (see +@fig:POST function).
 
 
-![Screen Shot 2018-11-27 at 9.19.27 PM](images/markdown-img-paste-20181127220628598.png){#fig:POST function}
+![Screen Shot 2018-11-27 at 9.19.27 PM](images/markdown-img-paste-20181127220628598.png){#fig:POSTfunction}
 
 
 Result for POST function (see +@fig:POST Result).
 
 
-![Screen Shot 2018-11-27 at 9.21.26 PM](images/markdown-img-paste-20181127220650461.png){#fig:POST Result}
+![Screen Shot 2018-11-27 at 9.21.26 PM](images/markdown-img-paste-20181127220650461.png){#fig:POSTResult}
 
 
 * **Delete a function**:
 Expand DELETE /function/{fname} in the Swagger UI. Type in the function name to delete and then click "Try it out!" (see +@fig:DELETE function).
 
 
-![Screen Shot 2018-11-27 at 9.26.20 PM](images/markdown-img-paste-20181127220713847.png){#fig: DELETE function}
+![Screen Shot 2018-11-27 at 9.26.20 PM](images/markdown-img-paste-20181127220713847.png){#fig:DELETEfunction}
 
 
 Result for DELETE function (see +@fig:DELETE result).
 
 
-![Screen Shot 2018-11-27 at 9.27.09 PM](images/markdown-img-paste-20181127220728802.png){#fig:DELETE result}
+![Screen Shot 2018-11-27 at 9.27.09 PM](images/markdown-img-paste-20181127220728802.png){#fig:DELETEresult}
 
 ## Steps To Reproduce
 
