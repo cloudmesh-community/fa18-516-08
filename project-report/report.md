@@ -155,9 +155,21 @@ Result for DELETE function (see +@fig:DELETEresult).
 ## Steps To Reproduce
 
 To reproduce the project environment in any Ubuntu machine, use the
-**/project-code/shell/setup.sh**  and then to start REST service use **/project-code/shell/runAPI.sh**
+**/project-code/shell/setup.sh** . \n
 
-curl commands to test REST are provided in **/project-code/shell/testAPI.sh**
+The setup.sh has following commands:\n
+
+git clone https://github.com/cloudmesh-community/fa18-516-08 \n
+cd fa18-516-08/project-code \n
+sudo pip install -r requirements.txt \n
+
+Then, open config.yaml to update your AWS access key id and AWS secret access key for the user id which has permission to create AWS services and resources.\n
+
+To start REST service use **/project-code/shell/runAPI.sh** \n
+
+sudo python lambda_app.py \n
+
+Commands to test REST are provided in **/project-code/shell/testAPI.sh** \n
 
 ## Technologies Used
 
