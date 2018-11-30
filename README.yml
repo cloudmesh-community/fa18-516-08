@@ -9,7 +9,7 @@ section:
     - title: Azure Functions
       url: https://github.com/cloudmesh-community/book/edit/master/chapters/faas/microsoft-azure-functions.md
     - title: Google Cloud Functions
-      url: https://github.com/cloudmesh-community/book/blob/master/chapters/faas/google-cloud-functions.md
+      url:  https://github.com/cloudmesh-community/book/blob/master/chapters/faas/google-cloud-functions.md
 paper:
     - title: GPPR
       keyword: GDPR
