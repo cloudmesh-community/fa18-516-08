@@ -159,15 +159,15 @@ To reproduce the project environment in any Ubuntu machine, use the
 
 The setup.sh has following commands:
 
-git clone https://github.com/cloudmesh-community/fa18-516-08
-cd fa18-516-08/project-code
-sudo pip install -r requirements.txt
+* git clone https://github.com/cloudmesh-community/fa18-516-08
+* cd fa18-516-08/project-code
+* sudo pip install -r requirements.txt
 
 Then, open config.yaml to update your AWS access key id and AWS secret access key for the user id which has permission to create AWS services and resources.
 
 To start REST service use **/project-code/shell/runAPI.sh**
 
-sudo python lambda_app.py
+* sudo python lambda_app.py
 
 Commands to test REST are provided in **/project-code/shell/testAPI.sh**
 
