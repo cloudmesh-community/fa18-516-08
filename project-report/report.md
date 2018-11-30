@@ -83,7 +83,7 @@ python lambda_app.py
 REST service will start on port 8080 (see +@fig:start REST)
 
 
-![Screen Shot 2018-11-27 at 8.39.56 PM](images/markdown-img-paste-20181127220402146.png){#fig:startREST}
+![Starting REST Service](images/markdown-img-paste-20181127220402146.png){#fig:startREST}
 
 
 Once the REST service has started , bring up the Swagger UI (see +@fig: SwaggerUI).curl can also be used in the command line to test the REST service)
