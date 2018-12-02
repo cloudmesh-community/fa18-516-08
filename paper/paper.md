@@ -1,4 +1,4 @@
-# Cloud and Privacy :wave: fa18-516-08
+# Cloud and Data Privacy :smiley: fa18-516-08
 
 
 | Varun Joshi
@@ -7,41 +7,24 @@
 | hid: fa18-516-08
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-08/blob/master/paper/paper.md)
 
-:o: Add Learning outcome
+**:mortar_board: Learning Objectives**
 
-:o: introduction focusses to much about what we will learn, focus on content, use the learning outcome bullet section we use in the handbook instead
+* Learn about data privacy in Cloud infrastructure
+* European Union's General Data Protection Regulation and how it effects Cloud computing for data Privacy
+* Learn about major cloud vendors data privacy readiness
+* Shift in choice of cloud infrastructure with data privacy as priority
 
-:o: introduce the problem instead
+## Introduction
 
-:o: bibtex issues
+In this chapter we discuss the problem of data privacy in multitenant cloud infrastructure. The personal data of cloud users and data from businesses which deal in personal user data and use cloud technology, is stored and processed in cloud infrastructure. How this data is transferred between entities, how it is exposed to be used and retained, the policies for data purging and how users can control their personal data has become a mandatory policy decision for cloud vendors. With the advent of GDPR for European Union's personal data protection, the cloud computing usage for storing and processing personal user data is changing. Data privacy in general has become the driving decision in choosing and opearting on cloud for many businesses. In subsequent sections, we will learn about cloud data privacy in the wake of GDPR and how it effects businesses across the globe.
 
-:o: urls done wrong
-
-The general qustion should be if this chapter is actually CLoud
-CoMputing and provacy and GDPR is a subsection to it.
-
-## GDPR Compliance and Cloud Computing 
+### GDPR Compliance
 
 European Union's General Data Protection Regulation (GDPR) came in to
 effect on May 25, 2018.
 
-:o: this is not an introduction, but an explanation what is covered,
-which is fine. But so far there is no information covered, and we may
-need to discuss if this shuld be changed or deleted. we also need a
-learning outcome section as we use in other epubs.
-
-We will cover the guidance of GDPR to cloud computing and how it
-applies to the businesses inside and outside European Union. We will
-touch upon the terms data processor and data controllers for cloud
-computing as related to GDPR compliance. We will also cover GDPR
-readiness and privacy statements of some common cloud vendors like
-Amazon, Microsoft and Google. We will also present general market
-outlook in the wake of GDPR for preference of public vs private cloud.
-
-### GDPR Compliance
-
 The core of the GDPR comliance is to protect EU citizens from privacy
-and data breaches [@www-GDPR Key Changes]. It aims to give back the
+and data breaches [@www-GDPRKeyChanges]. It aims to give back the
 control of personal data to citizens and residents.
 
 We may wonder that GDPR is applicable only for protecting EU citizens
@@ -54,7 +37,7 @@ in EU as well as for organizations like Uber, Visa, Apple and many
 more who are ubiquitous in their business models and deal with EU
 citizens personal data.
 
-[@www-GDPR Definitions] lists personal data as defined in Article 4 of
+[@www-GDPRDefinitions] lists personal data as defined in Article 4 of
 GDPR:
 
 > "*personal data* means any information relating to an identified or
@@ -185,24 +168,17 @@ personal data. Let's look more in detail in next section.
 
 ### Public or Private Cloud
 
-Let us define few terms before we dig deep into the choice of public or
-private cloud given GDPR compliance.
+The definition of Private and Public cloud as defined by NIST:
 
-:o: this has been defined elsewjeer in the book and eiither shoudl be
-moved there if not and we simple refernce here and how it is relevant, we can
-use the terms here with a back refernce to that section.
-
-* Private cloud is an internal or enterprise dedicated cloud where
-  data center resides and belongs to the enterprise and is behind
-  enterprise firewall [@www-expedient]. The enterprise is solely
+* Private cloud : The cloud infrastructure is operated solely for an organization. It may be
+managed by the organization or a third party and may exist on premise or off
+premise [@www-NIST]. The enterprise is solely
   responsible for managing and scaling the infrastructure as needed.
   Examples are AT&T, Cisco, T-Mobile have their own private cloud hosted
   in their own data centers.
-  :o: the nist definition must be used first. Expedinet did not defin
-  these terms but nist did
-* Public cloud is a multi-tenant architecture where  the cloud
-  infrastructure provider hosts many
-  enterprises in its data centers [@www-expedient].
+
+* Public cloud : The cloud infrastructure is made available to the general public or a large
+industry group and is owned by an organization selling cloud services [@www-NIST].
   The enterprises
   and
   their data are virtually separated in the data center and
@@ -212,16 +188,15 @@ use the terms here with a back refernce to that section.
   choose to individually upgrade and update the resources for patching,
   security etc. Examples are AWS, GCP, Azure.
 
-
-
 Based on the above concepts, there could be multiple iterations of the
 cloud solution.
-
 
 * Hybrid cloud is one such solution where there is a mix usage of on
   premise data center and public cloud data center. The use case could
   be based on mission critical applications, data privacy, need for on
   demand scalability, high availability etc.
+  NIST defines hybrid cloud as :
+  The cloud infrastructure is a composition of two or more clouds (private,community, or public) that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load-balancing between clouds) [@www-NIST].
 * Managed cloud services provides enterprise an option to outsource
   the management of the cloud infrastructure and services to a
   third-party company like Rackspace or Expedient. Again the managed
@@ -231,7 +206,6 @@ cloud solution.
   dedicated completely to an enterprise for their infrastructure needs
   and managed by the providers. Rackspace, for example, uses Openstack
   software for their managed cloud services solution.
-
 
 Now with the knowledge of above concepts, it's clear to define the
 cloud strategy. Keeping in mind the requirements of GDPR compliance
@@ -261,7 +235,6 @@ provider in their journey to achieve less overhead of maintaining data
 centers, achieving scalability and at the same time protecting the
 interests of data subjects.
 
-
 ### Common Vendors GDPR Readiness
 
 Major cloud solution vendors like AWS, GCP and Azure are GDPR
@@ -271,25 +244,23 @@ GDPR compliant. Privacy statements of vendors has also been updated to
 reflect their GDPR readiness. Refer the following for major vendors
 GDPR readiness:
 
-:o: wrong
-
 * AWS
 
-[https://aws.amazon.com/blogs/security/all-aws-services-gdpr-ready/]
+[@www-AWSGDPR]
 
 * GCP
 
-[https://cloud.google.com/blog/topics/inside-google-cloud/google-cloud-ready-for-gdpr]
+[@www-GCPGDPR]
 
 * Azure
 
-[https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Assess-GDPR-readiness-with-Microsoft-Cloud-App-Security/ba-p/250572]
+[@www-AzureGDPR]
 
 Example of updated privacy policy in the wake of GDPR:
 
 * Redhat
 
-[https://www.redhat.com/en/about/privacy-policy]
+[@www-RedHat]
 
 Important takeaways from the RedHat privacy statement [@www-RedHat] is
 that Redhat claims the following rights:
@@ -304,5 +275,8 @@ that Redhat claims the following rights:
   data portability); and
 * The right to lodge a complaint with your local data protection authority;
 
-:o: it is  unclear in what relationship this is used and on
-what this is applied Is is the OS is it a srvice is it something else ...
+Above privacy statement example shows how RedHat provides users with control and rights to access their data stored in cloud which RedHat collects through its website and any other website owned by RedHat. This is the direct effect of GDPR and mandating data privacy policy in general.
+
+## Conclusion
+
+With businesses moving their IT infrastructure to cloud and data privacy becoming a driving decision in choosing appropriate cloud strategy, the introduction of GDPR compliance is a benchmark to change the usage and selection of cloud computing solution. As more and more personal data is stored and processed in cloud, we may see new regulations or enhancemnet to existing ones improving data privacy and introducing more flexibility for cloud infrastructure.
