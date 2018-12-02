@@ -11,8 +11,8 @@ section:
     - title: Google Cloud Functions
       url:  https://github.com/cloudmesh-community/book/blob/master/chapters/faas/google-cloud-functions.md
 paper:
-    - title: GPPR
-      keyword: GDPR
+    - title: Cloud and Data Privacy
+      keyword: GDPR, Data Privacy
       url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/paper/paper.md         
 project:
     - title: "Managing AWS Lambda Using REST API"
