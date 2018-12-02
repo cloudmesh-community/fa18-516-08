@@ -9,6 +9,7 @@
 **:mortar_board: Learning Objectives**
 
 * Understand RESTful APIs and explore basic CRUD operations
+* Learn about OpenAPI documentation using Swagger 2.0
 * Apply REST understanding to Amazon's FaaS offering - AWS Lambda
 * Learn AWS SDK for Python - boto3
 * Use boto3 and Python Flask framework for building RESTful API with AWS Lambda as the resource
@@ -33,7 +34,7 @@ The goal of this project is to build a solution utilizing REST APIs to manage AW
 
 The project is build of three components (see +@fig:Architecture).
 
-![arch.jpg](images/arch.jpg){#fig:Architecture}
+![Project Architecture](images/arch.jpg){#fig:Architecture}
 
 * Swagger 2.0 is used for writing API specification.The specification describes endpoints for AWS Lambda CRUD operations and defines operation for each endpoint.
 * Python flask framework consumes the OpenAPI specification and directs the endpoints to Python functions by building a RESTful app.
@@ -43,7 +44,7 @@ The project is build of three components (see +@fig:Architecture).
 
 Refer to the architecture (see +@fig:Architecture). I have enhanced the figure to include implementation details (see +@fig:Implementation).
 
-![arch1.jpg](images/arch1.jpg){#fig:Implementation}
+![Project Architecture With Implementation](images/arch1.jpg){#fig:Implementation}
 
 * **OpenAPI specification (Swagger 2.0)** :
   - **/project-code/lambda.yaml** : Defines the endpoints for CRUD operations on AWS lambda
@@ -80,7 +81,7 @@ Refer to the architecture (see +@fig:Architecture). I have enhanced the figure t
 In the /project-code directory, run the Python program lambda_app.py:
 python lambda_app.py
 
-REST service will start on port 8080 (see +@fig:start REST)
+REST service will start on port 8080 (see +@fig:startREST)
 
 
 ![Start REST Service](images/markdown-img-paste-20181127220402146.png){#fig:startREST}
@@ -152,9 +153,9 @@ Result for DELETE function (see +@fig:DELETEresult).
 
 ![DELETE Function Result](images/markdown-img-paste-20181127220728802.png){#fig:DELETEresult}
 
-## Steps To Reproduce
+## Recreating Project Environment
 
-To reproduce the project environment in any Ubuntu machine, use the
+To recreate the project environment in any Ubuntu machine, use the
 **/project-code/shell/setup.sh**
 
 The setup.sh has following commands:
@@ -188,4 +189,11 @@ Commands to test REST are provided in **/project-code/shell/testAPI.sh**
 
 ## Conclusion
 
+The goal of this project was to learn about OpenAPI documentaion for writing REST API using Swagger 2.0 and applying this learning to explore REST
+CRUD operations for AWS Lambda Fuction as a Service.
+The end result of the project produced a nice OpenAPI (Swagger 2.0) documentation with AWS Lambda as endpoints. The endpoint operations were written using Python 3.7. The API documentation generated as part of this project can be reused to operate on Lambda endpoints utilizing any supported programming language and not just Python 3.7.
+The reusability of this project and demonstration of AWS Lambda exposed as REST endpoints is the biggest gain of this project learning exercise. The OpenAPI documentation can also be reused to expose more endpoints over REST which are similar to AWS Lambda such as AWS API Gateway, AWS S3 or AWS Dynamo DB.
+
 ## Acknowledgement
+
+I would like to thank professor Gregor von Laszewski and associate instructors for the course ENGR 516 for providing their guidance and help in achieving the goal of this project learning.
