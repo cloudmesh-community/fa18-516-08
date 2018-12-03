@@ -172,6 +172,14 @@ To start REST service use **/project-code/shell/runAPI.sh**
 
 Commands to test REST are provided in **/project-code/shell/testAPI.sh**
 
+* Testing using an AWS Lambda deployment package other than "hello.zip":
+  - If you would like to test the API with your own AWS Lambda deployment package, then do the following:
+    - use the following curl command to upload the deployment package to the API server **test** directory which is part of the project environment setup.
+    curl -X POST -F 'pkg=@local path to your deployment package' http://0.0.0.0:8080/lambda/deploy-pkg
+    - To create new AWS Lambda based on your deployment package,use the appropriate body parameters for the POST operation in the curl command which match the required parameters as per your deployment package. Refer to **project-code/test/fun.json**
+  - If you are deploying the API in a distributed client server model, the above method will be extremely useful for providing the deployment package to the API server to create a new AWS Lambda function. In the distributed setup, the curl will look like this:
+    - curl -X POST -F 'pkg=@local path to your deployment package' http://APIHost:APIPort/lambda/deploy-pkg
+
 
 ## Technologies Used
 
