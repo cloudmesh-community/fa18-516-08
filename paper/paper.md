@@ -244,23 +244,13 @@ GDPR compliant. Privacy statements of vendors has also been updated to
 reflect their GDPR readiness. Refer the following for major vendors
 GDPR readiness:
 
-* AWS
-
-[@www-AWSGDPR]
-
-* GCP
-
-[@www-GCPGDPR]
-
-* Azure
-
-[@www-AzureGDPR]
+* AWS [@www-AWSGDPR]
+* GCP [@www-GCPGDPR]
+* Azure [@www-AzureGDPR]
 
 Example of updated privacy policy in the wake of GDPR:
 
-* Redhat
-
-[@www-RedHat]
+* Redhat [@www-RedHat]
 
 Important takeaways from the RedHat privacy statement [@www-RedHat] is
 that Redhat claims the following rights:
