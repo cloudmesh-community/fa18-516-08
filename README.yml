@@ -6,8 +6,6 @@ owner:
   community: e516
   semester: fa18
 section:
-    - title: Azure Functions
-      url: https://github.com/cloudmesh-community/book/edit/master/chapters/faas/microsoft-azure-functions.md
     - title: Google Cloud Functions
       url:  https://github.com/cloudmesh-community/book/blob/master/chapters/faas/google-cloud-functions.md
 paper:
@@ -18,5 +16,5 @@ project:
     - title: "Managing AWS Lambda Using REST API"
       url: https://github.com/cloudmesh-community/fa18-516-08/blob/master/project-report/report.md
 other:
-    - activity: TBD
-      url: TBD
+    - activity: Resolving error with pyenv install on macOS High Sierra
+      url: https://github.com/cloudmesh-community/book/blob/master/chapters/prg/python/python-install.md
