@@ -1,4 +1,4 @@
-# Managing AWS Lambda Using REST API :smiley:fa18-516-08
+# Managing AWS Lambda Using REST API
 
 | Varun Joshi
 | vajoshi@iu.edu
