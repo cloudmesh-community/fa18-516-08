@@ -1,4 +1,4 @@
-# Cloud and Data Privacy :smiley: fa18-516-08
+# Cloud and Data Privacy
 
 
 | Varun Joshi
