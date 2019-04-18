@@ -5,6 +5,8 @@
 | Indiana University
 | hid: fa18-516-08
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-08/blob/master/project-report/report.md)
+| code: [:cloud:](https://github.com/cloudmesh-community/fa18-516-08/blob/master/project-code)
+| spec: [:cloud:](https://github.com/cloudmesh-community/fa18-516-08/blob/master/project-code/lambda.yaml)
 
 **:mortar_board: Learning Objectives**
 
